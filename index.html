@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HueLocal - Discover Hue through local eyes</title>
-    <link rel="icon" type="image/jpeg" href="https://cdn.phototourl.com/member/2026-11-11-6304de5e-d1b8-4dc5-bc7a-ccb2e60c5df3.jpg">
-    <link rel="apple-touch-icon" href="https://cdn.phototourl.com/member/2026-11-11-6304de5e-d1b8-4dc5-bc7a-ccb2e60c5df3.jpg">
+    <link rel="icon" type="image/jpeg" href="avthuelocal.jpg">
+    <!-- Thẻ khai báo chuẩn Apple Touch Icon cho điện thoại -->
+    <link rel="apple-touch-icon" href="https://cdn.phototourl.com/member/2026-11-11-6304de5e-d1b8-4dc5-bc7a-ccb2e60c5df3.png">
     <meta property="og:image" content="https://cdn.phototourl.com/member/2026-11-11-6304de5e-d1b8-4dc5-bc7a-ccb2e60c5df3.jpg">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -46,7 +47,7 @@
 
     <!-- Hình nền toàn trang sắc nét 100% chuẩn thiết kế Canva -->
     <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
-        <div class="absolute inset-0 bg-cover bg-center opacity-100" style="background-image: url('https://cdn.phototourl.com/member/2026-11-12-9924d86c-5bbb-4f17-9f02-6690dd51e943.png');"></div>
+        <div class="absolute inset-0 bg-cover bg-center opacity-100" style="background-image: url('hinhnen.png');"></div>
     </div>
 
     <!-- Top Notification & Language Bar -->
@@ -63,42 +64,90 @@
 
     <!-- Main Navigation Header -->
     <header class="sticky top-0 z-50 bg-cream/95 backdrop-blur border-b border-[#0D3322]/10 shadow-sm">
-        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-          <a href="#" class="text-2xl font-black text-[#0D3322] tracking-wider flex items-center gap-2">
-            <img src="https://cdn.phototourl.com/member/2026-11-11-6304de5e-d1b8-4dc5-bc7a-ccb2e60c5df3.jpg" alt="HueLocal Logo" class="w-9 h-9 object-cover rounded-xl border border-[#0D3322]/20 shadow-sm">
-            <div>
-                <span class="text-[#0D3322] mr-0.5">HUE</span>LOCAL
-            </div>
-          </a>
+        <div class="w-full px-6 py-3 flex justify-between items-center">
+            <!-- Logo HueLocal nằm sát bên trái -->
+            <a href="#" class="text-2xl font-black text-[#0D3322] tracking-wider flex items-center gap-2">
+                <img src="avthuelocal.jpg" alt="HueLocal Logo" class="w-9 h-9 object-cover rounded-xl border border-[#0D3322]/20 shadow-sm">
+                <div>
+                    <span class="text-[#0D3322] mr-0.5">HUE</span>LOCAL
+                </div>
+            </a>
             
-          <nav class="hidden md:flex items-center space-x-6 text-sm font-medium">
+            <!-- Menu điều hướng Desktop -->
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
                 <a href="#home" class="nav-home hover:text-[#0D3322] font-semibold text-black transition">Trang chủ</a>
                 <a href="#about" class="nav-about hover:text-[#0D3322] font-semibold text-black transition">Giới thiệu</a>
                 <a href="#explore" class="nav-explore hover:text-[#0D3322] font-semibold text-black transition">Khám phá Huế</a>
+                <a href="#ai-tourism" class="nav-ai hover:text-[#0D3322] font-semibold text-black transition">AI với du lịch</a>
                 <a href="#stories" class="nav-stories hover:text-[#0D3322] font-semibold text-black transition">Những chuyến đi</a>
                 <a href="#partners" class="nav-partners hover:text-[#0D3322] font-semibold text-black transition">Đối tác</a>
                 <a href="#team" class="nav-member hover:text-[#0D3322] transition text-[#0D3322] font-bold">Thành viên</a>
                 <a href="#contact" class="nav-contact hover:text-[#0D3322] font-semibold text-black transition">Liên hệ & Đặt chỗ</a>
             </nav>
 
-            <!-- Mobile Hamburger -->
+            <!-- Mobile Hamburger Button -->
             <button onclick="toggleMobileMenu()" class="md:hidden text-[#0D3322] text-xl focus:outline-none">
                 <i class="fa-solid fa-bars"></i>
             </button>
         </div>
 
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-cream border-b border-[#0D3322]/10 px-4 py-4 space-y-3">
-            <a href="#home" class="block font-medium text-black nav-home" onclick="toggleMobileMenu()">Trang chủ</a>
-            <a href="#about" class="block font-medium text-black nav-about" onclick="toggleMobileMenu()">Giới thiệu</a>
-            <a href="#explore" class="block font-medium text-black nav-explore" onclick="toggleMobileMenu()">Khám phá Huế</a>
-            <a href="#stories" class="block font-medium text-black nav-stories" onclick="toggleMobileMenu()">Những chuyến đi</a>
-            <a href="#partners" class="block font-medium text-black nav-partners" onclick="toggleMobileMenu()">Đối tác</a>
-            <a href="#team" class="block font-medium text-[#0D3322] font-bold nav-member" onclick="toggleMobileMenu()">Thành viên</a>
-            <a href="#contact" class="block font-medium text-black nav-contact" onclick="toggleMobileMenu()">Liên hệ & Đặt chỗ</a>
+        <!-- Mobile Menu Dropdown (Đã được bổ sung đầy đủ) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-cream border-t border-[#0D3322]/10 px-6 py-4 space-y-3">
+            <a href="#home" onclick="toggleMobileMenu()" class="block nav-home text-black font-semibold hover:text-[#0D3322]">Trang chủ</a>
+            <a href="#about" onclick="toggleMobileMenu()" class="block nav-about text-black font-semibold hover:text-[#0D3322]">Giới thiệu</a>
+            <a href="#explore" onclick="toggleMobileMenu()" class="block nav-explore text-black font-semibold hover:text-[#0D3322]">Khám phá Huế</a>
+            <a href="#ai-tourism" onclick="toggleMobileMenu()" class="block nav-ai text-black font-semibold hover:text-[#0D3322]">AI với du lịch</a>
+            <a href="#stories" onclick="toggleMobileMenu()" class="block nav-stories text-black font-semibold hover:text-[#0D3322]">Những chuyến đi</a>
+            <a href="#partners" onclick="toggleMobileMenu()" class="block nav-partners text-black font-semibold hover:text-[#0D3322]">Đối tác</a>
+            <a href="#team" onclick="toggleMobileMenu()" class="block nav-member text-[#0D3322] font-bold">Thành viên</a>
+            <a href="#contact" onclick="toggleMobileMenu()" class="block nav-contact text-black font-semibold hover:text-[#0D3322]">Liên hệ & Đặt chỗ</a>
         </div>
     </header>
+   <!-- THẺ CSS HIỆU ỨNG CHẠY NGANG (MARQUEE KHÍT FULL MÀN HÌNH) -->
+<style>
+    @keyframes marquee {
+        0% { transform: translateX(0%); }
+        100% { transform: translateX(-50%); }
+    }
+    .animate-marquee {
+        display: flex;
+        width: max-content;
+        animation: marquee 20s linear infinite;
+    }
+    .animate-marquee:hover {
+        animation-play-state: paused;
+    }
+</style>
 
+<!-- GIAO DIỆN DẢI ẢNH CHẠY SÁT KHÍT FULL KHÔNG KHOẢNG TRỐNG -->
+<div class="relative overflow-hidden bg-[#0D3322] border-y border-[#F3C68F]/30 z-40 shadow-md">
+    <!-- Ô nhãn huelocal news cố định ở góc trái -->
+    <div class="absolute left-0 top-0 bottom-0 z-30 bg-[#0D3322]/95 backdrop-blur px-4 flex items-center gap-2 border-r border-[#F3C68F]/30 shadow-2xl">
+        <span class="text-xs font-black text-cream tracking-wider">huelocal <span class="text-[#F3C68F]">news</span></span>
+    </div>
+    
+    <!-- Dải ảnh chạy liên tục, sát khít nhau, không khoảng cách trống (space-x-0) -->
+    <div class="animate-marquee items-center pl-32">
+        <!-- Nhóm ảnh 1 -->
+        <div class="flex items-center shrink-0">
+            <img src="colau.jpg" class="w-40 h-16 object-cover border-r border-black/20">
+            <img src="khaidinh.jfif" class="w-40 h-16 object-cover border-r border-black/20">
+            <img src="nonla.jfif" class="w-40 h-16 object-cover border-r border-black/20">
+            <img src="minhmang.jfif" class="w-40 h-16 object-cover border-r border-black/20">
+            <img src="anhemlocal.jpg" class="w-40 h-16 object-cover border-r border-black/20">
+            <img src="hoagiay.jfif" class="w-40 h-16 object-cover border-r border-black/20">
+        </div>
+        <!-- Nhóm ảnh 2 (Lặp lại để chạy vòng lặp vô tận mượt mà) -->
+        <div class="flex items-center shrink-0">
+            <img src="colau.jpg" class="w-40 h-16 object-cover border-r border-black/20">
+            <img src="khaidinh.jfif" class="w-40 h-16 object-cover border-r border-black/20">
+            <img src="nonla.jfif" class="w-40 h-16 object-cover border-r border-black/20">
+            <img src="minhmang.jfif" class="w-40 h-16 object-cover border-r border-black/20">
+            <img src="anhemlocal.jpg" class="w-40 h-16 object-cover border-r border-black/20">
+            <img src="hoagiay.jfif" class="w-40 h-16 object-cover border-r border-black/20">
+        </div>
+    </div>
+</div>
     <!-- Hero Section -->
     <section id="home" class="hero relative text-[#0D3322] py-16 px-4 overflow-hidden z-10" style="padding-top: 70px;">
         <div class="container mx-auto relative z-10 max-w-3xl text-center space-y-6 my-4">
@@ -118,9 +167,15 @@
             </div>
         </div>
 
+        <!-- Khung Video Hero Section thay thế cho ảnh cũ -->
         <div class="container mx-auto max-w-3xl px-4 pt-8 relative z-10">
             <div class="p-3 bg-white/40 backdrop-blur-md rounded-[2.5rem] border-2 border-[#0D3322]/30 shadow-2xl">
-                <div class="rounded-[2rem] overflow-hidden border border-[#0D3322]/20 shadow-inner h-64 md:h-80 bg-cover bg-center" style="background-image: url('https://cdn.phototourl.com/member/2026-11-12-00b87eec-c87b-4c5e-b018-ebaad8182c4d.jpg');">
+                <div class="rounded-[2rem] overflow-hidden border border-[#0D3322]/20 shadow-inner h-64 md:h-80 bg-black relative">
+                    <video autoplay muted loop playsinline class="w-full h-full object-cover">
+                        <!-- Thay link video của cậu vào trong thẻ source bên dưới -->
+                        <source src="https://www.image2url.com/r2/default/videos/1794571156474-18403b42-fdde-459e-a8f3-1611d01943d7.mp4" type="video/mp4">
+                        Trình duyệt của bạn không hỗ trợ thẻ video.
+                    </video>
                 </div>
             </div>
         </div>
@@ -230,11 +285,10 @@
                 </div>
             </div>
 
-            <!-- Grid chứa các địa điểm -->
-            <div id="exploreGrid" class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <!-- 1. Đại Nội -->
                 <div class="explore-card heritage bg-white/10 border border-white/20 rounded-3xl p-6 hover:border-[#F3C68F] transition cursor-pointer group" onclick="openPlaceDetail('Đại Nội Huế', 'Kinh thành triều Nguyễn với kiến trúc cung điện nguy nga, nơi lưu giữ dấu ấn lịch sử hàng trăm năm.', '23 Đoàn Thị Điểm, TP. Huế')">
-                    <div class="h-48 rounded-2xl bg-cover bg-center mb-4 group-hover:scale-[1.02] transition-transform duration-300" style="background-image: url('https://cdn.phototourl.com/member/2026-11-12-87324246-b09e-4f5d-aadd-0be6f95f3bce.jpg');"></div>
+                    <div class="h-48 rounded-2xl bg-cover bg-center mb-4 group-hover:scale-[1.02] transition-transform duration-300" style="background-image: url('dainoi.jpg');"></div>
                     <span class="text-xs text-[#F3C68F] font-bold uppercase tracking-wider">Heritage</span>
                     <h3 id="place-1-title" class="text-xl font-bold mt-1 text-white group-hover:text-[#F3C68F] transition">Đại Nội Huế</h3>
                     <p id="place-1-desc" class="text-xs text-cream/90 mt-2 leading-relaxed">Trung tâm quyền lực triều Nguyễn xưa với hệ thống cung điện, đền đài tráng lệ...</p>
@@ -242,7 +296,7 @@
                 
                 <!-- 2. Làng Nón Tây Hồ -->
                 <div class="explore-card craft bg-white/10 border border-white/20 rounded-3xl p-6 hover:border-[#F3C68F] transition cursor-pointer group" onclick="openPlaceDetail('Làng Nón Lá Tây Hồ', 'Trải nghiệm chằm nón bài thơ xứ Huế, ngắm những chiếc nón lấp lánh thơ văn dưới ánh nắng sông Bồi.', 'Làng Tây Hồ, xã Phú Hồ, huyện Phú Vang, Thừa Thiên Huế')">
-                    <div class="h-48 rounded-2xl bg-cover bg-center mb-4 group-hover:scale-[1.02] transition-transform duration-300" style="background-image: url('https://cdn.phototourl.com/member/2026-11-12-56548139-5e67-4b92-a2d1-a2a739171661.jpg');"></div>
+                    <div class="h-48 rounded-2xl bg-cover bg-center mb-4 group-hover:scale-[1.02] transition-transform duration-300" style="background-image: url('nonla.jfif');"></div>
                     <span class="text-xs text-[#F3C68F] font-bold uppercase tracking-wider">Traditional Craft</span>
                     <h3 id="place-2-title" class="text-xl font-bold mt-1 text-white group-hover:text-[#F3C68F] transition">Làng Nón Lá Tây Hồ</h3>
                     <p id="place-2-desc" class="text-xs text-cream/90 mt-2 leading-relaxed">Nơi lưu giữ hồn thơ chiếc nón bài thơ xứ Huế qua bàn tay khéo léo của nghệ nhân lâu năm...</p>
@@ -250,7 +304,7 @@
 
                 <!-- 3. Làng Hương Thủy Xuân -->
                 <div class="explore-card craft bg-white/10 border border-white/20 rounded-3xl p-6 hover:border-[#F3C68F] transition cursor-pointer group" onclick="openPlaceDetail('Làng Hương Thủy Xuân', 'Check-in rực rỡ sắc màu các chân hương xanh, đỏ, vàng và tự tay trải nghiệm làm hương trầm truyền thống.', '84 Huyền Trân Công Chúa, TP. Huế')">
-                    <div class="h-48 rounded-2xl bg-cover bg-center mb-4 group-hover:scale-[1.02] transition-transform duration-300" style="background-image: url('https://cdn.phototourl.com/member/2026-11-12-2c4869d2-e37e-475e-b20b-64c8531d1d0b.jpg');"></div>
+                    <div class="h-48 rounded-2xl bg-cover bg-center mb-4 group-hover:scale-[1.02] transition-transform duration-300" style="background-image: url('huong.jfif');"></div>
                     <span class="text-xs text-[#F3C68F] font-bold uppercase tracking-wider">Traditional Craft</span>
                     <h3 id="place-3-title" class="text-xl font-bold mt-1 text-white group-hover:text-[#F3C68F] transition">Làng Hương Thủy Xuân</h3>
                     <p id="place-3-desc" class="text-xs text-cream/90 mt-2 leading-relaxed">Làng nghề làm hương lâu đời với những bó hương xòe rộng rực rỡ dưới nắng sớm...</p>
@@ -258,7 +312,7 @@
 
                 <!-- 4. Lăng Khải Định -->
                 <div class="explore-card heritage bg-white/10 border border-white/20 rounded-3xl p-6 hover:border-[#F3C68F] transition cursor-pointer group" onclick="openPlaceDetail('Lăng Khải Định (Ứng Lăng)', 'Công trình lăng tẩm độc đáo bậc nhất kết hợp tinh hoa kiến trúc Đông - Tây và nghệ thuật khảm sành sứ tinh xảo.', 'Thủy Bằng, Hương Thủy, Thừa Thiên Huế')">
-                    <div class="h-48 rounded-2xl bg-cover bg-center mb-4 group-hover:scale-[1.02] transition-transform duration-300" style="background-image: url('https://cdn.phototourl.com/member/2026-11-12-7666042f-755d-40c3-87b3-123089cf45bd.jpg');"></div>
+                    <div class="h-48 rounded-2xl bg-cover bg-center mb-4 group-hover:scale-[1.02] transition-transform duration-300" style="background-image: url('khaidinh.jfif');"></div>
                     <span class="text-xs text-[#F3C68F] font-bold uppercase tracking-wider">Heritage</span>
                     <h3 id="place-4-title" class="text-xl font-bold mt-1 text-white group-hover:text-[#F3C68F] transition">Lăng Khải Định</h3>
                     <p id="place-4-desc" class="text-xs text-cream/90 mt-2 leading-relaxed">Kiệt tác kiến trúc khảm sành sứ đỉnh cao, giao thoa văn hóa Đông - Tây độc đáo...</p>
@@ -266,7 +320,7 @@
 
                 <!-- 5. Đầm phá Tam Giang -->
                 <div class="explore-card hidden bg-white/10 border border-white/20 rounded-3xl p-6 hover:border-[#F3C68F] transition cursor-pointer group" onclick="openPlaceDetail('Đầm phá Tam Giang', 'Đầm nước lợ lớn nhất Đông Nam Á, nơi ngắm hoàng hôn buông xuống đẹp đến nao lòng trên những chài lưới mưu sinh.', 'Quảng Điền / Phú Vang, Thừa Thiên Huế')">
-                    <div class="h-48 rounded-2xl bg-cover bg-center mb-4 group-hover:scale-[1.02] transition-transform duration-300" style="background-image: url('https://cdn.phototourl.com/member/2026-11-12-9929d0ea-30fe-42d7-a8be-e5aa33279766.jpg');"></div>
+                    <div class="h-48 rounded-2xl bg-cover bg-center mb-4 group-hover:scale-[1.02] transition-transform duration-300" style="background-image: url('tamgiang.jfif');"></div>
                     <span class="text-xs text-[#F3C68F] font-bold uppercase tracking-wider">Scenic / Hidden Gem</span>
                     <h3 id="place-5-title" class="text-xl font-bold mt-1 text-white group-hover:text-[#F3C68F] transition">Đầm phá Tam Giang</h3>
                     <p id="place-5-desc" class="text-xs text-cream/90 mt-2 leading-relaxed">Trải nghiệm không gian mênh mông nước và chiêm ngưỡng hoàng hôn rực rỡ đẹp nhất xứ Huế...</p>
@@ -274,55 +328,55 @@
 
                 <!-- 6. Đồi Vọng Cảnh -->
                 <div class="explore-card hidden bg-white/10 border border-white/20 rounded-3xl p-6 hover:border-[#F3C68F] transition cursor-pointer group" onclick="openPlaceDetail('Đồi Vọng Cảnh', 'Điểm ngắm hoàng hôn tuyệt đẹp bên dòng sông Hương, rợp bóng thông xanh và lăng tẩm ẩn hiện.', 'Đồi Vọng Cảnh, Điện Biên Phủ, TP. Huế')">
-                    <div class="h-48 rounded-2xl bg-cover bg-center mb-4 group-hover:scale-[1.02] transition-transform duration-300" style="background-image: url('https://cdn.phototourl.com/member/2026-11-12-386f7947-0df5-4bb4-9842-a84e81aefc99.jpg');"></div>
+                    <div class="h-48 rounded-2xl bg-cover bg-center mb-4 group-hover:scale-[1.02] transition-transform duration-300" style="background-image: url('doivongcanh.jfif');"></div>
                     <span class="text-xs text-[#F3C68F] font-bold uppercase tracking-wider">Hidden Gem</span>
                     <h3 id="place-6-title" class="text-xl font-bold mt-1 text-white group-hover:text-[#F3C68F] transition">Đồi Vọng Cảnh</h3>
                     <p id="place-6-desc" class="text-xs text-cream/90 mt-2 leading-relaxed">Ngắm hoàng hôn thơ mộng bên sông Hương, nơi thời gian như ngừng trôi...</p>
                 </div>
 
-                <!-- Chùa Thiên Mụ -->
+                <!-- BỔ SUNG: Chùa Thiên Mụ -->
                 <div class="explore-card heritage bg-white/10 border border-white/20 rounded-3xl p-6 hover:border-[#F3C68F] transition cursor-pointer group" onclick="openPlaceDetail('Chùa Thiên Mụ', 'Ngôi cổ tự linh thiêng bên dòng sông Hương thơ mộng, biểu tượng cổ kính gắn liền với văn hóa tâm linh xứ Huế.', 'Đồi Hà Khê, phường Hương Long, TP. Huế')">
-                    <div class="h-48 rounded-2xl bg-cover bg-center mb-4 group-hover:scale-[1.02] transition-transform duration-300" style="background-image: url('https://cdn.phototourl.com/member/2026-11-12-784b59b1-2681-43ab-b65c-155380574d78.jpg');"></div>
+                    <div class="h-48 rounded-2xl bg-cover bg-center mb-4 group-hover:scale-[1.02] transition-transform duration-300" style="background-image: url('thienmu.jfif');"></div>
                     <span class="text-xs text-[#F3C68F] font-bold uppercase tracking-wider">Heritage</span>
                     <h3 id="place-7-title" class="text-xl font-bold mt-1 text-white group-hover:text-[#F3C68F] transition">Chùa Thiên Mụ</h3>
                     <p id="place-7-desc" class="text-xs text-cream/90 mt-2 leading-relaxed">Biểu tượng tâm linh lâu đời với Tháp Phước Duyên uy nghiêm soi bóng xuống dòng sông Hương...</p>
                 </div>
 
-                <!-- Lăng Minh Mạng -->
+                <!-- BỔ SUNG: Lăng Minh Mạng -->
                 <div class="explore-card heritage bg-white/10 border border-white/20 rounded-3xl p-6 hover:border-[#F3C68F] transition cursor-pointer group" onclick="openPlaceDetail('Lăng Minh Mạng (Hiếu Lăng)', 'Công trình lăng tẩm uy nghi, hài hòa tuyệt mỹ giữa kiến trúc cung đình thâm nghiêm và thiên nhiên sơn thủy hữu tình.', 'Xã Hương Thọ, thành phố Huế')">
-                    <div class="h-48 rounded-2xl bg-cover bg-center mb-4 group-hover:scale-[1.02] transition-transform duration-300" style="background-image: url('https://cdn.phototourl.com/member/2026-11-12-16f1a11b-320f-4cfb-8ca7-a27fac301b1c.jpg');"></div>
+                    <div class="h-48 rounded-2xl bg-cover bg-center mb-4 group-hover:scale-[1.02] transition-transform duration-300" style="background-image: url('minhmang.jfif');"></div>
                     <span class="text-xs text-[#F3C68F] font-bold uppercase tracking-wider">Heritage</span>
                     <h3 id="place-8-title" class="text-xl font-bold mt-1 text-white group-hover:text-[#F3C68F] transition">Lăng Minh Mạng</h3>
                     <p id="place-8-desc" class="text-xs text-cream/90 mt-2 leading-relaxed">Quần thể kiến trúc hoàng gia mang đậm triết lý Nho giáo, bao bọc bởi hồ nước và rừng thông tĩnh lặng...</p>
                 </div>
 
-                <!-- Cung An Định -->
+                <!-- BỔ SUNG: Cung An Định -->
                 <div class="explore-card heritage bg-white/10 border border-white/20 rounded-3xl p-6 hover:border-[#F3C68F] transition cursor-pointer group" onclick="openPlaceDetail('Cung An Định', 'Dinh thự hoàng gia mang phong cách kiến trúc châu Âu kết hợp truyền thống Á Đông đầy lãng mạn và cổ kính.', '179 Phan Đình Phùng, TP. Huế')">
-                    <div class="h-48 rounded-2xl bg-cover bg-center mb-4 group-hover:scale-[1.02] transition-transform duration-300" style="background-image: url('https://cdn.phototourl.com/member/2026-11-12-13fdcaf4-df3c-4e4d-9f8d-50927ec26dad.jpg');"></div>
+                    <div class="h-48 rounded-2xl bg-cover bg-center mb-4 group-hover:scale-[1.02] transition-transform duration-300" style="background-image: url('andinh.jfif');"></div>
                     <span class="text-xs text-[#F3C68F] font-bold uppercase tracking-wider">Heritage</span>
                     <h3 id="place-9-title" class="text-xl font-bold mt-1 text-white group-hover:text-[#F3C68F] transition">Cung An Định</h3>
                     <p id="place-9-desc" class="text-xs text-cream/90 mt-2 leading-relaxed">Dinh thự tuyệt đẹp của vua Khải Định và Bảo Đại với những đường nét kiến trúc Tây phương tinh tế...</p>
                 </div>
 
-                <!-- Làng hoa giấy Thanh Tiên -->
+                <!-- BỔ SUNG: Làng hoa giấy Thanh Tiên -->
                 <div class="explore-card craft bg-white/10 border border-white/20 rounded-3xl p-6 hover:border-[#F3C68F] transition cursor-pointer group" onclick="openPlaceDetail('Làng hoa giấy Thanh Tiên', 'Làng nghề làm hoa giấy truyền thống hơn 300 năm tuổi, nổi tiếng với những cành hoa rực rỡ sắc màu phục vụ đời sống tâm linh.', 'Làng Thanh Tiên, xã Phú Mậu, huyện Phú Vang, Thừa Thiên Huế')">
-                    <div class="h-48 rounded-2xl bg-cover bg-center mb-4 group-hover:scale-[1.02] transition-transform duration-300" style="background-image: url('https://cdn.phototourl.com/member/2026-11-12-e7ed25bf-7841-44ad-a4b3-ca380cb0e38c.jpg');"></div>
+                    <div class="h-48 rounded-2xl bg-cover bg-center mb-4 group-hover:scale-[1.02] transition-transform duration-300" style="background-image: url('hoagiay.jfif');"></div>
                     <span class="text-xs text-[#F3C68F] font-bold uppercase tracking-wider">Traditional Craft</span>
                     <h3 id="place-10-title" class="text-xl font-bold mt-1 text-white group-hover:text-[#F3C68F] transition">Làng hoa giấy Thanh Tiên</h3>
                     <p id="place-10-desc" class="text-xs text-cream/90 mt-2 leading-relaxed">Nơi lưu giữ nghệ thuật làm hoa thủ công truyền thống bên dòng sông Truồi và phá Tam Giang...</p>
                 </div>
 
-                <!-- Cổ Lầu -->
+                <!-- BỔ SUNG: Cổ Lầu -->
                 <div class="explore-card cafe bg-white/10 border border-white/20 rounded-3xl p-6 hover:border-[#F3C68F] transition cursor-pointer group" onclick="openPlaceDetail('Cổ Lầu Cafe', 'Không gian cà phê mang đậm dấu ấn hoài cổ, nơi thưởng thức hương vị trà và cà phê đậm chất Huế xưa.', 'Khu vực nội thành TP. Huế')">
-                    <div class="h-48 rounded-2xl bg-cover bg-center mb-4 group-hover:scale-[1.02] transition-transform duration-300" style="background-image: url('https://cdn.phototourl.com/member/2026-11-12-66667d58-36d9-4e35-abba-035c3d4ad970.jpg');"></div>
+                    <div class="h-48 rounded-2xl bg-cover bg-center mb-4 group-hover:scale-[1.02] transition-transform duration-300" style="background-image: url('colau.jpg');"></div>
                     <span class="text-xs text-[#F3C68F] font-bold uppercase tracking-wider">Cafe</span>
                     <h3 id="place-11-title" class="text-xl font-bold mt-1 text-white group-hover:text-[#F3C68F] transition">Cổ Lầu</h3>
                     <p id="place-11-desc" class="text-xs text-cream/90 mt-2 leading-relaxed">Điểm dừng chân thư giãn tuyệt vời với kiến trúc cổ kính và không gian yên bình đậm chất Cố đô...</p>
                 </div>
 
-                <!-- Hồ Thủy Tiên -->
+                <!-- BỔ SUNG: Hồ Thủy Tiên -->
                 <div class="explore-card hidden bg-white/10 border border-white/20 rounded-3xl p-6 hover:border-[#F3C68F] transition cursor-pointer group" onclick="openPlaceDetail('Hồ Thủy Tiên', 'Công viên nước bỏ hoang đầy kỳ bí và mê hoặc, điểm check-in nổi tiếng cho những ai yêu thích khám phá vẻ đẹp hoang sơ.', 'Đồi Thiên An, xã Thủy Bằng, TP. Huế')">
-                    <div class="h-48 rounded-2xl bg-cover bg-center mb-4 group-hover:scale-[1.02] transition-transform duration-300" style="background-image: url('https://cdn.phototourl.com/member/2026-11-12-e685fa09-85ef-4124-8d31-404757748df5.jpg');"></div>
+                    <div class="h-48 rounded-2xl bg-cover bg-center mb-4 group-hover:scale-[1.02] transition-transform duration-300" style="background-image: url('thuytien.jfif');"></div>
                     <span class="text-xs text-[#F3C68F] font-bold uppercase tracking-wider">Hidden Gem</span>
                     <h3 id="place-12-title" class="text-xl font-bold mt-1 text-white group-hover:text-[#F3C68F] transition">Hồ Thủy Tiên</h3>
                     <p id="place-12-desc" class="text-xs text-cream/90 mt-2 leading-relaxed">Khu công viên nước ma mị nằm ẩn mình giữa rừng thông Thiên An, thu hút đông đảo du khách tò mò...</p>
@@ -331,7 +385,41 @@
         </div>
     </section>
 
-    <!-- Nhật ký hành trình (Stories / Posts) -->
+    <!-- MỤC MỚI: AI VỚI DU LỊCH -->
+    <section id="ai-tourism" class="py-20 px-4 container mx-auto max-w-4xl relative z-10">
+        <div class="bg-white/95 backdrop-blur-md rounded-3xl p-8 sm:p-12 shadow-2xl border border-[#0D3322]/15 space-y-8">
+            <div class="text-center space-y-3">
+                <span id="ai-badge" class="text-[#0D3322] font-bold uppercase text-xs tracking-widest bg-[#0D3322]/10 px-3 py-1 rounded-full">Góc nhìn công nghệ</span>
+                <h2 id="ai-title" class="font-serif text-3xl sm:text-4xl font-bold text-[#0D3322]">AI với du lịch</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div class="space-y-4 text-sm text-black leading-relaxed text-justify">
+                    <p id="ai-desc-1">
+                        Chúng mình không phủ nhận sự tiện lợi và những giá trị mà AI mang lại. Nhưng chúng mình tin rằng, du lịch không chỉ là những dòng thông tin được cung cấp, mà còn là những câu chuyện được kể bằng cảm xúc, những nụ cười trong giao tiếp và sự kết nối giữa người với người.
+                    </p>
+                    <p id="ai-desc-2">
+                        AI có thể giúp du khách biết thêm về Huế, nhưng tình yêu của một người con xứ Huế dành cho quê hương mình lại là một câu chuyện khác.
+                    </p>
+                    <p id="ai-desc-3">
+                        Chúng mình không muốn đứng ngoài sự phát triển của công nghệ, nhưng cũng không muốn một ngày nào đó, những người trẻ yêu du lịch, yêu văn hóa và muốn kể câu chuyện quê hương lại trở nên không còn cần thiết.
+                    </p>
+                    <p id="ai-desc-4" class="font-bold text-[#0D3322]">
+                        HueLocal chọn đồng hành cùng công nghệ, chứ không chọn để công nghệ thay thế con người. Bởi chúng mình tin rằng, công nghệ có thể kể một câu chuyện, nhưng chính con người mới thổi hồn vào câu chuyện ấy. 💜
+                    </p>
+                </div>
+                
+<div class="rounded-2xl overflow-hidden shadow-xl border border-[#0D3322]/20 bg-black relative">
+    <video autoplay muted loop playsinline class="w-full h-auto object-cover max-h-[350px]">
+        <source src="https://www.image2url.com/r2/default/videos/1794563451067-19ebc53d-ce9a-43b3-81ad-b536c4ede58b.mp4" type="video/mp4">
+        Trình duyệt của bạn không hỗ trợ thẻ video.
+    </video>
+</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nhật ký hành trình -->
     <section id="stories" class="py-20 px-4 container mx-auto relative z-10">
         <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
             <span id="stories-badge" class="text-[#0D3322] font-bold uppercase text-xs tracking-widest bg-[#0D3322]/10 px-3 py-1 rounded-full">Nhật ký hành trình</span>
@@ -339,10 +427,10 @@
             <p id="stories-subtitle" class="text-black font-medium text-sm">Mỗi bước chân qua những con ngõ nhỏ, mỗi sớm mai bên dòng Hương là một câu chuyện tình yêu HueLocal viết riêng cho Huế.</p>
         </div>
 
-        <div id="storiesGrid" class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             <!-- Story 1 -->
             <div class="bg-white rounded-3xl overflow-hidden shadow-xl border border-[#0D3322]/15 flex flex-col group">
-                <div class="h-72 bg-cover bg-center group-hover:scale-105 transition duration-500" style="background-image: url('https://cdn.phototourl.com/member/2026-11-12-4e271336-85ec-42b8-b392-8854e6d401a1.jpg');"></div>
+                <div class="h-72 bg-cover bg-center group-hover:scale-105 transition duration-500" style="background-image: url('xemay.jpg');"></div>
                 <div class="p-6 space-y-2">
                     <span id="story-tag-1" class="text-xs text-[#0D3322] font-bold uppercase tracking-wider bg-[#0D3322]/10 px-3 py-1 rounded-full">Phượt xứ Huế</span>
                     <h3 id="story-h-1" class="text-xl font-bold text-[#0D3322] font-serif pt-2">Vi vu trên yên xe máy</h3>
@@ -352,7 +440,7 @@
 
             <!-- Story 2 -->
             <div class="bg-white rounded-3xl overflow-hidden shadow-xl border border-[#0D3322]/15 flex flex-col group">
-                <div class="h-72 bg-cover bg-center group-hover:scale-105 transition duration-500" style="background-image: url('https://cdn.phototourl.com/member/2026-11-12-5aba273d-3b32-4aaa-94dc-4d46b34ca209.jpg');"></div>
+                <div class="h-72 bg-cover bg-center group-hover:scale-105 transition duration-500" style="background-image: url('daden.jpg');"></div>
                 <div class="p-6 space-y-2">
                     <span id="story-tag-2" class="text-xs text-[#0D3322] font-bold uppercase tracking-wider bg-[#0D3322]/10 px-3 py-1 rounded-full">Giao lưu văn hóa</span>
                     <h3 id="story-h-2" class="text-xl font-bold text-[#0D3322] font-serif pt-2">Khoảnh khắc kết nối</h3>
@@ -362,7 +450,7 @@
 
             <!-- Story 3 -->
             <div class="bg-white rounded-3xl overflow-hidden shadow-xl border border-[#0D3322]/15 flex flex-col group">
-                <div class="h-72 bg-cover bg-center group-hover:scale-105 transition duration-500" style="background-image: url('https://cdn.phototourl.com/member/2026-11-12-69c34345-a85f-4d1d-acfd-30b5bab68cee.jpg');"></div>
+                <div class="h-72 bg-cover bg-center group-hover:scale-105 transition duration-500" style="background-image: url('hunghocuoi.jpg');"></div>
                 <div class="p-6 space-y-2">
                     <span id="story-tag-3" class="text-xs text-[#0D3322] font-bold uppercase tracking-wider bg-[#0D3322]/10 px-3 py-1 rounded-full">Tình bạn phương xa</span>
                     <h3 id="story-h-3" class="text-xl font-bold text-[#0D3322] font-serif pt-2">Những người bạn mới</h3>
@@ -372,7 +460,7 @@
 
             <!-- Story 4 -->
             <div class="bg-white rounded-3xl overflow-hidden shadow-xl border border-[#0D3322]/15 flex flex-col group">
-                <div class="h-72 bg-cover bg-center group-hover:scale-105 transition duration-500" style="background-image: url('https://cdn.phototourl.com/member/2026-11-12-a2a58c52-fc13-40b5-99d6-4633f007e5ab.jpg');"></div>
+                <div class="h-72 bg-cover bg-center group-hover:scale-105 transition duration-500" style="background-image: url('aodaideptrai.jpg');"></div>
                 <div class="p-6 space-y-2">
                     <span id="story-tag-4" class="text-xs text-[#0D3322] font-bold uppercase tracking-wider bg-[#0D3322]/10 px-3 py-1 rounded-full">Cố đô hoài niệm</span>
                     <h3 id="story-h-4" class="text-xl font-bold text-[#0D3322] font-serif pt-2">Dáng vẻ truyền thống</h3>
@@ -395,7 +483,7 @@
 
         <div class="bg-white/95 backdrop-blur-sm rounded-3xl p-6 sm:p-8 shadow-xl border border-[#0D3322]/15 max-w-lg mx-auto my-8 text-center space-y-6">
             <div class="relative rounded-2xl overflow-hidden border-2 border-[#0D3322]/15 bg-cream p-4">
-                <img src="https://cdn.phototourl.com/member/2026-11-11-39403a29-aad2-4894-bbba-c0f0619c55c7.jpg" alt="Rồng Rắn Lên Mây" class="w-full h-auto object-cover rounded-xl shadow-inner">
+                <img src="rrlmvuong.jpg" alt="Rồng Rắn Lên Mây" class="w-full h-auto object-cover rounded-xl shadow-inner">
             </div>
 
             <div class="space-y-1">
@@ -416,7 +504,7 @@
             </div>
 
             <div class="rounded-2xl overflow-hidden border border-[#0D3322]/15 shadow-md">
-                <img src="https://cdn.phototourl.com/member/2026-11-11-06ff133e-dfc5-434c-a1a3-b45156f325db.jpg" alt="Banner Rồng Rắn Lên Mây" class="w-full h-auto object-cover">
+                <img src="rrlmngang.jpg" alt="Banner Rồng Rắn Lên Mây" class="w-full h-auto object-cover">
             </div>
         </div>
     </section>
@@ -432,7 +520,7 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
                 <div class="bg-cream/90 rounded-3xl p-8 border border-[#0D3322]/15 flex flex-col sm:flex-row items-center gap-6 shadow-lg group hover:border-[#0D3322] transition">
-                    <div class="w-32 h-32 rounded-2xl bg-cover bg-center shrink-0 shadow-md border-2 border-[#0D3322]" style="background-image: url('https://cdn.phototourl.com/member/2026-11-11-1b0296aa-e16e-4825-8e05-61c01590c957.jpg');"></div>
+                    <div class="w-32 h-32 rounded-2xl bg-cover bg-center shrink-0 shadow-md border-2 border-[#0D3322]" style="background-image: url('anhbao.jpg');"></div>
                     <div class="text-center sm:text-left space-y-2">
                         <span class="text-xs text-[#0D3322] font-bold uppercase tracking-wider">Leader</span>
                         <h3 class="text-xl font-bold text-[#0D3322]">Nguyễn Phan Hoài Bảo</h3>
@@ -440,7 +528,7 @@
                     </div>
                 </div>
                 <div class="bg-cream/90 rounded-3xl p-8 border border-[#0D3322]/15 flex flex-col sm:flex-row items-center gap-6 shadow-lg group hover:border-[#0D3322] transition">
-                    <div class="w-32 h-32 rounded-2xl bg-cover bg-center shrink-0 shadow-md border-2 border-[#0D3322]" style="background-image: url('https://cdn.phototourl.com/member/2026-11-12-3837698b-5c41-40d4-ba8f-119a6946db23.jpg');"></div>
+                    <div class="w-32 h-32 rounded-2xl bg-cover bg-center shrink-0 shadow-md border-2 border-[#0D3322]" style="background-image: url('anhhieu.jpg');"></div>
                     <div class="text-center sm:text-left space-y-2">
                         <span class="text-xs text-[#0D3322] font-bold uppercase tracking-wider">Profile picture</span>
                         <h3 class="text-xl font-bold text-[#0D3322]">Phạm Gia Hiếu</h3>
@@ -448,7 +536,7 @@
                     </div>
                 </div>
                 <div class="bg-cream/90 rounded-3xl p-8 border border-[#0D3322]/15 flex flex-col sm:flex-row items-center gap-6 shadow-lg group hover:border-[#0D3322] transition">
-                    <div class="w-32 h-32 rounded-2xl bg-cover bg-center shrink-0 shadow-md border-2 border-[#0D3322]" style="background-image: url('https://cdn.phototourl.com/member/2026-11-11-23734635-9ac1-4a80-b63b-6d1230430d28.jpg');"></div>
+                    <div class="w-32 h-32 rounded-2xl bg-cover bg-center shrink-0 shadow-md border-2 border-[#0D3322]" style="background-image: url('hungho.jpg');"></div>
                     <div class="text-center sm:text-left space-y-2">
                         <span class="text-xs text-[#0D3322] font-bold uppercase tracking-wider">Manager</span>
                         <h3 class="text-xl font-bold text-[#0D3322]">Hồ Hùng</h3>
@@ -456,7 +544,7 @@
                     </div>
                 </div>
                 <div class="bg-cream/90 rounded-3xl p-8 border border-[#0D3322]/15 flex flex-col sm:flex-row items-center gap-6 shadow-lg group hover:border-[#0D3322] transition">
-                    <div class="w-32 h-32 rounded-2xl bg-cover bg-center shrink-0 shadow-md border-2 border-[#0D3322]" style="background-image: url('https://cdn.phototourl.com/member/2026-11-12-922834eb-2095-44b4-9bad-2d418acc2c60.jpg');"></div>
+                    <div class="w-32 h-32 rounded-2xl bg-cover bg-center shrink-0 shadow-md border-2 border-[#0D3322]" style="background-image: url('minhdat.jpg');"></div>
                     <div class="text-center sm:text-left space-y-2">
                         <span class="text-xs text-[#0D3322] font-bold uppercase tracking-wider">Media leader</span>
                         <h3 class="text-xl font-bold text-[#0D3322]">Ngô Hoàng Minh Đạt</h3>
@@ -466,6 +554,12 @@
             </div>
         </div>
     </section>
+    <!-- Ảnh căn giữa sau phần giới thiệu thành viên (Chuẩn responsive cho cả PC & Điện thoại) -->
+<section class="py-12 px-4 flex justify-center items-center relative z-10">
+    <div class="w-full max-w-3xl flex justify-center">
+        <img src="anhemlocal.jpg" alt="HueLocal Centered Image" class="w-full h-auto object-cover rounded-3xl shadow-2xl border border-[#0D3322]/20">
+    </div>
+</section>
 
     <!-- Contact & Detailed Booking Form Section -->
     <section id="contact" class="py-20 px-4 container mx-auto max-w-3xl relative z-10">
@@ -509,14 +603,14 @@
         </div>
     </section>
 
-    <!-- Video tự động phát khi lướt tới -->
+    <!-- Video cuối trang -->
     <section class="py-12 px-4 container mx-auto max-w-4xl relative z-10 text-center">
-        <div class="rounded-3xl overflow-hidden shadow-2xl border border-[#0D3322]/15 bg-black">
-            <video autoplay muted loop playsinline class="w-full h-auto object-cover max-h-[500px]">
-                <source src="https://www.image2url.com/r2/default/videos/1794484476290-624c01e7-5baf-4bac-9b2c-afe06e4761e5.mp4" type="video/mp4">
-                Trình duyệt của bạn không hỗ trợ thẻ video.
-            </video>
-        </div>
+<div class="rounded-3xl overflow-hidden shadow-2xl border border-[#0D3322]/15 bg-black">
+    <video autoplay muted loop playsinline class="w-full h-auto object-cover max-h-[500px]">
+        <source src="https://www.image2url.com/r2/default/videos/1794484476290-624c01e7-5baf-4bac-9b2c-afe06e4761e5.mp4" type="video/mp4">
+        Trình duyệt của bạn không hỗ trợ thẻ video.
+    </video>
+</div>
     </section>
 
     <!-- Footer -->
@@ -526,13 +620,12 @@
                 <h3 class="text-2xl font-black text-white tracking-wider">HUE<span class="text-[#F3C68F]">LOCAL</span></h3>
                 <p id="footer-desc" class="text-xs leading-relaxed text-cream/80">Discover Hue through local eyes. Nền tảng du lịch bản địa hàng đầu tại Cố đô Huế.</p>
                 
-                <!-- Hai ảnh mã QR ở góc dưới cùng bên trái -->
                 <div class="flex items-center gap-3 pt-2">
                     <div class="w-16 h-16 bg-white p-1 rounded-xl shadow border border-white/20">
-                        <img src="https://cdn.phototourl.com/member/2026-11-12-0f6c54e5-8aad-4d84-9f8a-29d3d2edb64b.png" alt="QR Code 1" class="w-full h-full object-contain">
+                        <img src="wattap.PNG" alt="QR Code 1" class="w-full h-full object-contain">
                     </div>
                     <div class="w-16 h-16 bg-white p-1 rounded-xl shadow border border-white/20">
-                        <img src="https://cdn.phototourl.com/member/2026-11-12-3392f5df-e46f-4c8e-83a3-b76b5de23c63.png" alt="QR Code 2" class="w-full h-full object-contain">
+                        <img src="ins.PNG" alt="QR Code 2" class="w-full h-full object-contain">
                     </div>
                 </div>
             </div>
@@ -541,6 +634,7 @@
                 <ul class="space-y-2.5 text-xs">
                     <li><a href="#explore" id="footer-link-1" class="hover:text-white transition">Di tích lịch sử</a></li>
                     <li><a href="#explore" id="footer-link-2" class="hover:text-white transition">Ẩm thực cố đô</a></li>
+                    <li><a href="#ai-tourism" id="footer-link-ai" class="hover:text-white transition">AI với du lịch</a></li>
                     <li><a href="#stories" id="footer-link-stories" class="hover:text-white transition">Những chuyến đi</a></li>
                 </ul>
             </div>
@@ -609,7 +703,7 @@
             <div class="bg-[#0D3322] text-white p-6 flex justify-between items-center">
                 <div>
                     <h3 class="font-serif text-2xl font-bold">HueLocal CMS Control Center</h3>
-                    <p class="text-xs text-cream/80">Quản lý đặt chỗ, thêm địa điểm và thêm bài đăng song ngữ (VI/EN)</p>
+                    <p class="text-xs text-cream/80">Quản lý trực tiếp yêu cầu đặt chỗ, ứng tuyển HDV và đối tác</p>
                 </div>
                 <div class="flex items-center space-x-3">
                     <button onclick="logoutAdmin()" class="bg-red-600 text-white px-4 py-2 rounded-xl text-xs font-bold hover:bg-red-700 transition">Đăng xuất</button>
@@ -618,82 +712,8 @@
             </div>
 
             <div class="flex-1 overflow-y-auto p-6 space-y-8">
-                <!-- Form thêm địa điểm trực tiếp -->
                 <div class="bg-white p-6 rounded-3xl shadow-lg border border-[#0D3322]/15">
-                    <h4 class="font-bold text-[#0D3322] text-base mb-4"><i class="fa-solid fa-plus-circle text-[#0D3322] mr-2"></i> Thêm Địa Điểm Khám Phá Mới</h4>
-                    <form onsubmit="handleAddPlace(event)" class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <div>
-                            <label class="block text-xs font-bold text-[#0D3322] uppercase mb-1">Tên địa điểm</label>
-                            <input type="text" id="newPlaceTitle" required placeholder="Ví dụ: Chợ Đông Ba" class="w-full bg-cream border border-[#0D3322]/20 rounded-xl px-4 py-2 text-sm text-black focus:outline-none">
-                        </div>
-                        <div>
-                            <label class="block text-xs font-bold text-[#0D3322] uppercase mb-1">Danh mục</label>
-                            <select id="newPlaceCategory" class="w-full bg-cream border border-[#0D3322]/20 rounded-xl px-4 py-2 text-sm text-black focus:outline-none">
-                                <option value="heritage">Di tích (Heritage)</option>
-                                <option value="craft">Làng nghề (Craft)</option>
-                                <option value="cafe">Cà phê (Cafe)</option>
-                                <option value="hidden">Hidden Gems</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label class="block text-xs font-bold text-[#0D3322] uppercase mb-1">Link ảnh (URL)</label>
-                            <input type="url" id="newPlaceImg" required placeholder="https://..." class="w-full bg-cream border border-[#0D3322]/20 rounded-xl px-4 py-2 text-sm text-black focus:outline-none">
-                        </div>
-                        <div>
-                            <label class="block text-xs font-bold text-[#0D3322] uppercase mb-1">Địa chỉ</label>
-                            <input type="text" id="newPlaceAddress" required placeholder="Địa chỉ chi tiết tại Huế" class="w-full bg-cream border border-[#0D3322]/20 rounded-xl px-4 py-2 text-sm text-black focus:outline-none">
-                        </div>
-                        <div class="md:col-span-2">
-                            <label class="block text-xs font-bold text-[#0D3322] uppercase mb-1">Mô tả ngắn</label>
-                            <textarea id="newPlaceDesc" rows="2" required placeholder="Mô tả về địa điểm..." class="w-full bg-cream border border-[#0D3322]/20 rounded-xl px-4 py-2 text-sm text-black focus:outline-none"></textarea>
-                        </div>
-                        <div class="md:col-span-2">
-                            <button type="submit" class="bg-[#0D3322] text-cream px-6 py-2.5 rounded-xl font-bold hover:bg-[#0D3322]/90 transition text-xs uppercase tracking-wider shadow">Lưu và hiển thị địa điểm</button>
-                        </div>
-                    </form>
-                </div>
-
-                <!-- FORM THÊM BÀI ĐĂNG SONG NGỮ (VI/EN) -->
-                <div class="bg-white p-6 rounded-3xl shadow-lg border border-[#0D3322]/15">
-                    <h4 class="font-bold text-[#0D3322] text-base mb-4"><i class="fa-solid fa-newspaper text-[#0D3322] mr-2"></i> Thêm Bài Đăng / Nhật Ký Hành Trình (Song ngữ VI / EN)</h4>
-                    <form onsubmit="handleAddStory(event)" class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <div>
-                            <label class="block text-xs font-bold text-[#0D3322] uppercase mb-1">Tiêu đề (Tiếng Việt)</label>
-                            <input type="text" id="storyTitleVI" required placeholder="Ví dụ: Khám phá Huế về đêm" class="w-full bg-cream border border-[#0D3322]/20 rounded-xl px-4 py-2 text-sm text-black focus:outline-none">
-                        </div>
-                        <div>
-                            <label class="block text-xs font-bold text-[#0D3322] uppercase mb-1">Title (English)</label>
-                            <input type="text" id="storyTitleEN" required placeholder="E.g. Exploring Hue at night" class="w-full bg-cream border border-[#0D3322]/20 rounded-xl px-4 py-2 text-sm text-black focus:outline-none">
-                        </div>
-                        <div>
-                            <label class="block text-xs font-bold text-[#0D3322] uppercase mb-1">Tag / Danh mục (Tiếng Việt)</label>
-                            <input type="text" id="storyTagVI" required placeholder="Ví dụ: Phượt xứ Huế" class="w-full bg-cream border border-[#0D3322]/20 rounded-xl px-4 py-2 text-sm text-black focus:outline-none">
-                        </div>
-                        <div>
-                            <label class="block text-xs font-bold text-[#0D3322] uppercase mb-1">Tag (English)</label>
-                            <input type="text" id="storyTagEN" required placeholder="E.g. Hue Trip" class="w-full bg-cream border border-[#0D3322]/20 rounded-xl px-4 py-2 text-sm text-black focus:outline-none">
-                        </div>
-                        <div class="md:col-span-2">
-                            <label class="block text-xs font-bold text-[#0D3322] uppercase mb-1">Link ảnh bài đăng (URL)</label>
-                            <input type="url" id="storyImg" required placeholder="https://..." class="w-full bg-cream border border-[#0D3322]/20 rounded-xl px-4 py-2 text-sm text-black focus:outline-none">
-                        </div>
-                        <div>
-                            <label class="block text-xs font-bold text-[#0D3322] uppercase mb-1">Nội dung / Mô tả (Tiếng Việt)</label>
-                            <textarea id="storyDescVI" rows="2" required placeholder="Nội dung bài đăng tiếng Việt..." class="w-full bg-cream border border-[#0D3322]/20 rounded-xl px-4 py-2 text-sm text-black focus:outline-none"></textarea>
-                        </div>
-                        <div>
-                            <label class="block text-xs font-bold text-[#0D3322] uppercase mb-1">Description (English)</label>
-                            <textarea id="storyDescEN" rows="2" required placeholder="English description..." class="w-full bg-cream border border-[#0D3322]/20 rounded-xl px-4 py-2 text-sm text-black focus:outline-none"></textarea>
-                        </div>
-                        <div class="md:col-span-2">
-                            <button type="submit" class="bg-[#0D3322] text-cream px-6 py-2.5 rounded-xl font-bold hover:bg-[#0D3322]/90 transition text-xs uppercase tracking-wider shadow">Lưu và đăng bài viết</button>
-                        </div>
-                    </form>
-                </div>
-
-                <!-- Bảng yêu cầu đặt chỗ -->
-                <div class="bg-white p-6 rounded-3xl shadow-lg border border-[#0D3322]/15">
-                    <h4 class="font-bold text-[#0D3322] text-base mb-4">Yêu cầu Đặt chỗ trải nghiệm (<span id="countBookings">0</span>)</h4>
+                    <h4 class="font-bold text-[#0D3322] text-base mb-4">1. Yêu cầu Đặt chỗ trải nghiệm (<span id="countBookings">0</span>)</h4>
                     <div class="overflow-x-auto">
                         <table class="w-full text-left text-xs text-black">
                             <thead class="bg-cream text-[#0D3322] font-bold uppercase">
@@ -717,168 +737,16 @@
 
     <!-- JavaScript Application Logic & Translations -->
     <script>
-        let currentLang = 'vi';
         let db = {
             bookings: JSON.parse(localStorage.getItem('huelocal_bookings')) || [],
             guides: JSON.parse(localStorage.getItem('huelocal_guides')) || [],
-            partners: JSON.parse(localStorage.getItem('huelocal_partners')) || [],
-            customPlaces: JSON.parse(localStorage.getItem('huelocal_custom_places')) || [],
-            customStories: JSON.parse(localStorage.getItem('huelocal_custom_stories')) || []
+            partners: JSON.parse(localStorage.getItem('huelocal_partners')) || []
         };
 
         function saveDB() {
             localStorage.setItem('huelocal_bookings', JSON.stringify(db.bookings));
             localStorage.setItem('huelocal_guides', JSON.stringify(db.guides));
             localStorage.setItem('huelocal_partners', JSON.stringify(db.partners));
-            localStorage.setItem('huelocal_custom_places', JSON.stringify(db.customPlaces));
-            localStorage.setItem('huelocal_custom_stories', JSON.stringify(db.customStories));
-        }
-
-        window.addEventListener('DOMContentLoaded', () => {
-            renderCustomPlaces();
-            renderCustomStories();
-        });
-
-        function renderCustomPlaces() {
-            const grid = document.getElementById('exploreGrid');
-            db.customPlaces.forEach(p => {
-                const card = document.createElement('div');
-                card.className = `explore-card ${p.category || p.Category} bg-white/10 border border-white/20 rounded-3xl p-6 hover:border-[#F3C68F] transition cursor-pointer group`;
-                card.setAttribute('onclick', `openPlaceDetail('${p.title || p.Title}', '${p.desc || p.Description}', '${p.address || p.Address}')`);
-                card.innerHTML = `
-                    <div class="h-48 rounded-2xl bg-cover bg-center mb-4 group-hover:scale-[1.02] transition-transform duration-300" style="background-image: url('${p.img || p.Image}');"></div>
-                    <span class="text-xs text-[#F3C68F] font-bold uppercase tracking-wider">${(p.category || p.Category || '').toUpperCase()}</span>
-                    <h3 class="text-xl font-bold mt-1 text-white group-hover:text-[#F3C68F] transition">${p.title || p.Title}</h3>
-                    <p class="text-xs text-cream/90 mt-2 leading-relaxed">${p.desc || p.Description}</p>
-                `;
-                grid.appendChild(card);
-            });
-        }
-
-        function renderCustomStories() {
-            const grid = document.getElementById('storiesGrid');
-            // Xóa các custom stories cũ nếu có để render lại theo ngôn ngữ hiện tại
-            const existingCustom = grid.querySelectorAll('.custom-story-card');
-            existingCustom.forEach(el => el.remove());
-
-            db.customStories.forEach(s => {
-                const card = document.createElement('div');
-                card.className = 'custom-story-card bg-white rounded-3xl overflow-hidden shadow-xl border border-[#0D3322]/15 flex flex-col group';
-                
-                const title = currentLang === 'en' ? s.titleEN : s.titleVI;
-                const tag = currentLang === 'en' ? s.tagEN : s.tagVI;
-                const desc = currentLang === 'en' ? s.descEN : s.descVI;
-
-                card.innerHTML = `
-                    <div class="h-72 bg-cover bg-center group-hover:scale-105 transition duration-500" style="background-image: url('${s.img}');"></div>
-                    <div class="p-6 space-y-2">
-                        <span class="text-xs text-[#0D3322] font-bold uppercase tracking-wider bg-[#0D3322]/10 px-3 py-1 rounded-full">${tag}</span>
-                        <h3 class="text-xl font-bold text-[#0D3322] font-serif pt-2">${title}</h3>
-                        <p class="text-xs text-black/80 leading-relaxed">“${desc}”</p>
-                    </div>
-                `;
-                grid.appendChild(card);
-            });
-        }
-
-        function handleAddPlace(e) {
-            e.preventDefault();
-            const newPlace = {
-                "Title": document.getElementById('newPlaceTitle').value,
-                "Category": document.getElementById('newPlaceCategory').value,
-                "Image": document.getElementById('newPlaceImg').value,
-                "Address": document.getElementById('newPlaceAddress').value,
-                "Description": document.getElementById('newPlaceDesc').value
-            };
-
-            const SHEET_BEST_PLACES_URL = 'https://api.sheetbest.com/sheets/aceec5a9-5b13-433e-9f80-cc9e887f12f4';
-
-            fetch(SHEET_BEST_PLACES_URL, {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(newPlace)
-            })
-            .then(() => {
-                db.customPlaces.push({
-                    title: newPlace.Title,
-                    category: newPlace.Category,
-                    img: newPlace.Image,
-                    address: newPlace.Address,
-                    desc: newPlace.Description
-                });
-                saveDB();
-                alert('Thêm địa điểm thành công! Dữ liệu đã được lưu lên Google Sheets và hiển thị.');
-                e.target.reset();
-                closeModal('adminDashboardModal');
-                location.reload();
-            })
-            .catch(() => {
-                db.customPlaces.push({
-                    title: newPlace.Title,
-                    category: newPlace.Category,
-                    img: newPlace.Image,
-                    address: newPlace.Address,
-                    desc: newPlace.Description
-                });
-                saveDB();
-                alert('Đã lưu địa điểm vào hệ thống cục bộ!');
-                e.target.reset();
-                closeModal('adminDashboardModal');
-                location.reload();
-            });
-        }
-
-        function handleAddStory(e) {
-            e.preventDefault();
-            const newStory = {
-                "TitleVI": document.getElementById('storyTitleVI').value,
-                "TitleEN": document.getElementById('storyTitleEN').value,
-                "TagVI": document.getElementById('storyTagVI').value,
-                "TagEN": document.getElementById('storyTagEN').value,
-                "Image": document.getElementById('storyImg').value,
-                "DescVI": document.getElementById('storyDescVI').value,
-                "DescEN": document.getElementById('storyDescEN').value
-            };
-
-            const SHEET_BEST_STORIES_URL = 'https://api.sheetbest.com/sheets/aceec5a9-5b13-433e-9f80-cc9e887f12f4'; // Có thể đổi URL Google Sheets riêng cho bài đăng nếu muốn
-
-            fetch(SHEET_BEST_STORIES_URL, {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(newStory)
-            })
-            .then(() => {
-                db.customStories.push({
-                    titleVI: newStory.TitleVI,
-                    titleEN: newStory.TitleEN,
-                    tagVI: newStory.TagVI,
-                    tagEN: newStory.TagEN,
-                    img: newStory.Image,
-                    descVI: newStory.DescVI,
-                    descEN: newStory.DescEN
-                });
-                saveDB();
-                alert('Thêm bài đăng song ngữ thành công!');
-                e.target.reset();
-                renderCustomStories();
-                closeModal('adminDashboardModal');
-            })
-            .catch(() => {
-                db.customStories.push({
-                    titleVI: newStory.TitleVI,
-                    titleEN: newStory.TitleEN,
-                    tagVI: newStory.TagVI,
-                    tagEN: newStory.TagEN,
-                    img: newStory.Image,
-                    descVI: newStory.DescVI,
-                    descEN: newStory.DescEN
-                });
-                saveDB();
-                alert('Đã lưu bài đăng vào bộ nhớ cục bộ!');
-                e.target.reset();
-                renderCustomStories();
-                closeModal('adminDashboardModal');
-            });
         }
 
         const translations = {
@@ -887,6 +755,7 @@
                 navHome: "Trang chủ",
                 navAbout: "Giới thiệu",
                 navExplore: "Khám phá Huế",
+                navAi: "AI với du lịch",
                 navStories: "Những chuyến đi",
                 navPartners: "Đối tác",
                 navMember: "Thành viên",
@@ -945,9 +814,15 @@
                 place11Desc: "Điểm dừng chân thư giãn tuyệt vời với kiến trúc cổ kính và không gian yên bình đậm chất Cố đô...",
                 place12Title: "Hồ Thủy Tiên",
                 place12Desc: "Khu công viên nước ma mị nằm ẩn mình giữa rừng thông Thiên An, thu hút đông đảo du khách tò mò...",
+                aiBadge: "Góc nhìn công nghệ",
+                aiTitle: "AI với du lịch",
+                aiDesc1: "Chúng mình không phủ nhận sự tiện lợi và những giá trị mà AI mang lại. Nhưng chúng mình tin rằng, du lịch không chỉ là những dòng thông tin được cung cấp, mà còn là những câu chuyện được kể bằng cảm xúc, những nụ cười trong giao tiếp và sự kết nối giữa người với người.",
+                aiDesc2: "AI có thể giúp du khách biết thêm về Huế, nhưng tình yêu của một người con xứ Huế dành cho quê hương mình lại là một câu chuyện khác.",
+                aiDesc3: "Chúng mình không muốn đứng ngoài sự phát triển của công nghệ, nhưng cũng không muốn một ngày nào đó, những người trẻ yêu du lịch, yêu văn hóa và muốn kể câu chuyện quê hương lại trở nên không còn cần thiết.",
+                aiDesc4: "HueLocal chọn đồng hành cùng công nghệ, chứ không chọn để công nghệ thay thế con người. Bởi chúng mình tin rằng, công nghệ có thể kể một câu chuyện, nhưng chính con người mới thổi hồn vào câu chuyện ấy. 💜",
                 storiesBadge: "Nhật ký hành trình",
                 storiesTitle: "Những chuyến đi qua lăng kính bản địa",
-                storiesSubtitle: "Mỗi bước chân qua những con ngõ nhỏ, mỗi sớm mai bên dòng Hương là một câu chuyện tình yêu viết riêng cho Huế.",
+                storiesSubtitle: "Mỗi bước chân qua những con ngõ nhỏ, mỗi sớm mai bên dòng Hương là một câu chuyện tình yêu Đạt viết riêng cho Huế.",
                 storyTag1: "Phượt xứ Huế",
                 storyH1: "Vi vu trên yên xe máy",
                 storyP1: "“Lên xe và đi thôi! Cùng du khách nước ngoài vi vu khám phá những cung đường tuyệt đẹp quanh Cố đô. Come as a traveler, leave as a friend.”",
@@ -985,6 +860,7 @@
                 footerCol1: "Khám phá",
                 footerLink1: "Di tích lịch sử",
                 footerLink2: "Ẩm thực cố đô",
+                footerLinkAi: "AI với du lịch",
                 footerLinkStories: "Những chuyến đi",
                 footerCol2: "Chính sách",
                 footerPolicy1: "Chính sách bảo mật",
@@ -1001,6 +877,7 @@
                 navHome: "Home",
                 navAbout: "About Us",
                 navExplore: "Explore Hue",
+                navAi: "AI & Tourism",
                 navStories: "Journey Stories",
                 navPartners: "Partners",
                 navMember: "Membership",
@@ -1059,6 +936,12 @@
                 place11Desc: "A nostalgic cafe space offering traditional tea and coffee flavors with an authentic old-Hue vibe...",
                 place12Title: "Thuy Tien Lake",
                 place12Desc: "An eerie abandoned water park hidden within the Thien An pine hills, a famous check-in spot for explorers...",
+                aiBadge: "Technology Perspective",
+                aiTitle: "AI & Tourism",
+                aiDesc1: "We do not deny the convenience and value that AI brings. However, we believe that tourism is not just about providing information, but also about stories told through emotions, smiles in communication, and human-to-human connection.",
+                aiDesc2: "AI can help visitors learn more about Hue, but the love of a native son for his homeland is an entirely different story.",
+                aiDesc3: "We do not want to stand outside of technological advancement, but neither do we want a day to come when young people who love travel, culture, and telling their hometown stories become unnecessary.",
+                aiDesc4: "HueLocal chooses to accompany technology, not to let technology replace humans. Because we believe that technology can tell a story, but only humans can breathe life into it. 💜",
                 storiesBadge: "Journey Diary",
                 storiesTitle: "Journey Stories Through Local Eyes",
                 storiesSubtitle: "Every step through small alleys, every early morning by the Perfume River is a love story written exclusively for Hue.",
@@ -1099,6 +982,7 @@
                 footerCol1: "Explore",
                 footerLink1: "Historical Sites",
                 footerLink2: "Ancient Capital Cuisine",
+                footerLinkAi: "AI & Tourism",
                 footerLinkStories: "Journey Stories",
                 footerCol2: "Policies",
                 footerPolicy1: "Privacy Policy",
@@ -1113,7 +997,6 @@
         };
 
         function switchLang(lang) {
-            currentLang = lang;
             if(lang === 'en') {
                 document.getElementById('lang-en-btn').className = 'font-bold text-[#F3C68F] underline';
                 document.getElementById('lang-vi-btn').className = 'text-cream/70 hover:text-white';
@@ -1185,6 +1068,13 @@
             if(document.getElementById('place-12-title')) document.getElementById('place-12-title').innerText = t.place12Title;
             if(document.getElementById('place-12-desc')) document.getElementById('place-12-desc').innerText = t.place12Desc;
 
+            if(document.getElementById('ai-badge')) document.getElementById('ai-badge').innerText = t.aiBadge;
+            if(document.getElementById('ai-title')) document.getElementById('ai-title').innerText = t.aiTitle;
+            if(document.getElementById('ai-desc-1')) document.getElementById('ai-desc-1').innerText = t.aiDesc1;
+            if(document.getElementById('ai-desc-2')) document.getElementById('ai-desc-2').innerText = t.aiDesc2;
+            if(document.getElementById('ai-desc-3')) document.getElementById('ai-desc-3').innerText = t.aiDesc3;
+            if(document.getElementById('ai-desc-4')) document.getElementById('ai-desc-4').innerText = t.aiDesc4;
+
             if(document.getElementById('stories-badge')) document.getElementById('stories-badge').innerText = t.storiesBadge;
             if(document.getElementById('stories-title')) document.getElementById('stories-title').innerText = t.storiesTitle;
             if(document.getElementById('stories-subtitle')) document.getElementById('stories-subtitle').innerText = t.storiesSubtitle;
@@ -1230,6 +1120,7 @@
             if(document.getElementById('footer-col-1-title')) document.getElementById('footer-col-1-title').innerText = t.footerCol1;
             if(document.getElementById('footer-link-1')) document.getElementById('footer-link-1').innerText = t.footerLink1;
             if(document.getElementById('footer-link-2')) document.getElementById('footer-link-2').innerText = t.footerLink2;
+            if(document.getElementById('footer-link-ai')) document.getElementById('footer-link-ai').innerText = t.footerLinkAi;
             if(document.getElementById('footer-link-stories')) document.getElementById('footer-link-stories').innerText = t.footerLinkStories;
             if(document.getElementById('footer-col-2-title')) document.getElementById('footer-col-2-title').innerText = t.footerCol2;
             if(document.getElementById('footer-policy-1')) document.getElementById('footer-policy-1').innerText = t.footerPolicy1;
@@ -1245,18 +1136,18 @@
             document.querySelectorAll('.nav-home').forEach(el => el.innerText = t.navHome);
             document.querySelectorAll('.nav-about').forEach(el => el.innerText = t.navAbout);
             document.querySelectorAll('.nav-explore').forEach(el => el.innerText = t.navExplore);
+            document.querySelectorAll('.nav-ai').forEach(el => el.innerText = t.navAi);
             document.querySelectorAll('.nav-stories').forEach(el => el.innerText = t.navStories);
             document.querySelectorAll('.nav-partners').forEach(el => el.innerText = t.navPartners);
             document.querySelectorAll('.nav-member').forEach(el => el.innerText = t.navMember);
             document.querySelectorAll('.nav-contact').forEach(el => el.innerText = t.navContact);
-
-            // Render lại custom stories theo ngôn ngữ được chọn
-            renderCustomStories();
         }
 
         function toggleMobileMenu() {
             const menu = document.getElementById('mobile-menu');
-            menu.classList.toggle('hidden');
+            if (menu) {
+                menu.classList.toggle('hidden');
+            }
         }
 
         function closeModal(modalId) {
