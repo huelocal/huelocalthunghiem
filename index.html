@@ -56,7 +56,7 @@
         <div class="container mx-auto max-w-7xl flex justify-between items-center">
             <div class="flex items-center space-x-2 truncate">
                 <span class="w-2 h-2 rounded-full bg-softGold animate-ping"></span>
-                <span id="top-banner-text" class="truncate font-medium tracking-wide">Khám phá Huế qua lăng kính người bản địa | Discover Hue through local eyes</span>
+                <span data-i18n="topBanner" class="truncate font-medium tracking-wide">Khám phá Huế qua lăng kính người bản địa | Discover Hue through local eyes</span>
             </div>
             <div class="flex items-center space-x-3 shrink-0 font-bold">
                 <button onclick="App.switchLang('vi')" id="lang-vi-btn" class="underline text-softGold transition">VI</button>
@@ -78,13 +78,13 @@
             </a>
             
             <nav class="hidden lg:flex items-center space-x-7 text-xs font-bold tracking-widest uppercase">
-                <a href="#about" class="nav-about text-charcoal/80 hover:text-deepGreen transition py-1">Về chúng tôi</a>
-                <a href="#explore" class="nav-explore text-charcoal/80 hover:text-deepGreen transition py-1">Khám phá</a>
-                <a href="#ai-tourism" class="nav-ai text-charcoal/80 hover:text-deepGreen transition py-1">Góc nhìn AI</a>
-                <a href="#stories" class="nav-stories text-charcoal/80 hover:text-deepGreen transition py-1">Nhật ký</a>
-                <a href="#partners" class="nav-partners text-charcoal/80 hover:text-deepGreen transition py-1">Đối tác</a>
-                <a href="#team" class="nav-member text-charcoal/80 hover:text-deepGreen transition py-1">Đội ngũ</a>
-                <a href="#contact" class="nav-contact bg-deepGreen text-cream px-6 py-3 rounded-full hover:bg-deepGreen/90 transition shadow-lg transform hover:-translate-y-0.5">Đặt trải nghiệm</a>
+                <a href="#about" data-i18n="navAbout" class="text-charcoal/80 hover:text-deepGreen transition py-1">Về chúng tôi</a>
+                <a href="#explore" data-i18n="navExplore" class="text-charcoal/80 hover:text-deepGreen transition py-1">Khám phá</a>
+                <a href="#ai-tourism" data-i18n="navAi" class="text-charcoal/80 hover:text-deepGreen transition py-1">Góc nhìn AI</a>
+                <a href="#stories" data-i18n="navStories" class="text-charcoal/80 hover:text-deepGreen transition py-1">Nhật ký</a>
+                <a href="#partners" data-i18n="navPartners" class="text-charcoal/80 hover:text-deepGreen transition py-1">Đối tác</a>
+                <a href="#team" data-i18n="navMember" class="text-charcoal/80 hover:text-deepGreen transition py-1">Đội ngũ</a>
+                <a href="#contact" data-i18n="navContact" class="bg-deepGreen text-cream px-6 py-3 rounded-full hover:bg-deepGreen/90 transition shadow-lg transform hover:-translate-y-0.5">Đặt trải nghiệm</a>
             </nav>
 
             <button onclick="App.toggleMobileMenu()" class="lg:hidden text-deepGreen text-2xl p-1 focus:outline-none">
@@ -94,13 +94,13 @@
 
         <!-- Mobile Drawer -->
         <div id="mobile-menu" class="hidden lg:hidden glass-dark text-cream border-t border-white/10 px-6 py-8 space-y-5 shadow-2xl">
-            <a href="#about" onclick="App.toggleMobileMenu()" class="block nav-about text-cream font-bold text-base">Về chúng tôi</a>
-            <a href="#explore" onclick="App.toggleMobileMenu()" class="block nav-explore text-cream font-bold text-base">Khám phá Huế</a>
-            <a href="#ai-tourism" onclick="App.toggleMobileMenu()" class="block nav-ai text-cream font-bold text-base">Góc nhìn AI</a>
-            <a href="#stories" onclick="App.toggleMobileMenu()" class="block nav-stories text-cream font-bold text-base">Nhật ký hành trình</a>
-            <a href="#partners" onclick="App.toggleMobileMenu()" class="block nav-partners text-cream font-bold text-base">Đối tác liên kết</a>
-            <a href="#team" onclick="App.toggleMobileMenu()" class="block nav-member text-cream font-bold text-base">Thành viên sáng lập</a>
-            <a href="#contact" onclick="App.toggleMobileMenu()" class="block nav-contact bg-softGold text-deepGreen text-center py-3.5 rounded-xl font-black text-sm shadow">Liên hệ & Đặt chỗ</a>
+            <a href="#about" onclick="App.toggleMobileMenu()" data-i18n="navAbout" class="block text-cream font-bold text-base">Về chúng tôi</a>
+            <a href="#explore" onclick="App.toggleMobileMenu()" data-i18n="navExplore" class="block text-cream font-bold text-base">Khám phá Huế</a>
+            <a href="#ai-tourism" onclick="App.toggleMobileMenu()" data-i18n="navAi" class="block text-cream font-bold text-base">Góc nhìn AI</a>
+            <a href="#stories" onclick="App.toggleMobileMenu()" data-i18n="navStories" class="block text-cream font-bold text-base">Nhật ký hành trình</a>
+            <a href="#partners" onclick="App.toggleMobileMenu()" data-i18n="navPartners" class="block text-cream font-bold text-base">Đối tác liên kết</a>
+            <a href="#team" onclick="App.toggleMobileMenu()" data-i18n="navMember" class="block text-cream font-bold text-base">Thành viên sáng lập</a>
+            <a href="#contact" onclick="App.toggleMobileMenu()" data-i18n="navContact" class="block bg-softGold text-deepGreen text-center py-3.5 rounded-xl font-black text-sm shadow">Liên hệ & Đặt chỗ</a>
         </div>
     </header>
 
@@ -140,23 +140,23 @@
         <!-- 1. HERO SECTION -->
         <section id="home" class="relative pt-20 px-6">
             <div class="container mx-auto max-w-6xl text-center space-y-8">
-                <div id="hero-badge" class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-deepGreen bg-white/90 backdrop-blur px-6 py-2.5 rounded-full border border-deepGreen/15 shadow-sm">
+                <div data-i18n="heroBadge" class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-deepGreen bg-white/90 backdrop-blur px-6 py-2.5 rounded-full border border-deepGreen/15 shadow-sm">
                     <i class="fa-solid fa-crown text-softGold"></i> “Chi mô răng rứa ơ tề, người mô xứ lạ mau về đây chơi”
                 </div>
                 
-                <h1 id="hero-title" class="text-4xl sm:text-6xl md:text-8xl font-black tracking-tight leading-[1.05] text-deepGreen max-w-5xl mx-auto font-serif">
+                <h1 data-i18n="heroTitle" class="text-4xl sm:text-6xl md:text-8xl font-black tracking-tight leading-[1.05] text-deepGreen max-w-5xl mx-auto font-serif">
                     Discover Hue through local eyes.
                 </h1>
                 
-                <p id="hero-desc" class="text-base md:text-xl text-charcoal/80 leading-relaxed font-light max-w-3xl mx-auto">
+                <p data-i18n="heroDesc" class="text-base md:text-xl text-charcoal/80 leading-relaxed font-light max-w-3xl mx-auto">
                     Cố đô Huế qua góc nhìn nguyên bản của người bản địa: những con đường rêu phong tĩnh lặng, bữa ăn đậm vị tình quê và câu chuyện cung đình còn vang vọng trong từng mái ngói.
                 </p>
 
                 <div class="pt-4 flex justify-center gap-5 flex-wrap">
-                    <a href="#explore" id="hero-btn" class="bg-deepGreen text-cream hover:bg-deepGreen/90 px-9 py-4 rounded-full text-sm font-bold transition shadow-xl hover:shadow-2xl transform hover:-translate-y-1 flex items-center gap-3">
+                    <a href="#explore" data-i18n="heroBtnText" class="bg-deepGreen text-cream hover:bg-deepGreen/90 px-9 py-4 rounded-full text-sm font-bold transition shadow-xl hover:shadow-2xl transform hover:-translate-y-1 flex items-center gap-3">
                         Khám phá ngay <i class="fa-solid fa-arrow-right text-softGold"></i>
                     </a>
-                    <a href="#contact" class="bg-white hover:bg-cream text-deepGreen border border-deepGreen/20 px-9 py-4 rounded-full text-sm font-bold transition shadow-md">
+                    <a href="#contact" data-i18n="heroConsultBtn" class="bg-white hover:bg-cream text-deepGreen border border-deepGreen/20 px-9 py-4 rounded-full text-sm font-bold transition shadow-md">
                         Đặt lịch tư vấn tour
                     </a>
                 </div>
@@ -173,10 +173,10 @@
                         <div class="absolute inset-0 bg-gradient-to-t from-deepGreen/70 via-transparent to-transparent pointer-events-none"></div>
                         <div class="absolute bottom-8 left-8 right-8 flex justify-between items-end text-white">
                             <div>
-                                <span class="text-xs uppercase tracking-widest text-softGold font-bold">HueLocal Cinematic Experience</span>
-                                <h4 class="font-serif text-2xl font-bold mt-1">Hành trình chạm đến trái tim Cố đô</h4>
+                                <span data-i18n="heroCinematicSub" class="text-xs uppercase tracking-widest text-softGold font-bold">HueLocal Cinematic Experience</span>
+                                <h4 data-i18n="heroCinematicTitle" class="font-serif text-2xl font-bold mt-1">Hành trình chạm đến trái tim Cố đô</h4>
                             </div>
-                            <span class="hidden md:inline-block bg-white/20 backdrop-blur-md px-4 py-2 rounded-xl text-xs font-bold">Scroll to explore ↓</span>
+                            <span data-i18n="heroScrollText" class="hidden md:inline-block bg-white/20 backdrop-blur-md px-4 py-2 rounded-xl text-xs font-bold">Scroll to explore ↓</span>
                         </div>
                     </div>
                 </div>
@@ -187,11 +187,11 @@
         <section id="about" class="px-6">
             <div class="container mx-auto max-w-6xl grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
                 <div class="lg:col-span-5 space-y-6">
-                    <span id="about-hue-badge" class="inline-block bg-deepGreen/10 text-deepGreen text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full">Về Cố Đô Huế</span>
-                    <h2 id="about-hue-title" class="font-serif text-3xl sm:text-5xl font-bold text-deepGreen leading-tight">
+                    <span data-i18n="aboutHueBadge" class="inline-block bg-deepGreen/10 text-deepGreen text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full">Về Cố Đô Huế</span>
+                    <h2 data-i18n="aboutHueTitle" class="font-serif text-3xl sm:text-5xl font-bold text-deepGreen leading-tight">
                         Hồn thơ xứ Cố đô trầm mặc
                     </h2>
-                    <p id="about-hue-desc" class="text-base sm:text-lg text-charcoal/80 leading-relaxed font-light">
+                    <p data-i18n="aboutHueDesc" class="text-base sm:text-lg text-charcoal/80 leading-relaxed font-light">
                         Huế trầm mặc bên dòng Hương giang là trung tâm văn hóa, lịch sử đặc sắc với hệ thống cung điện, lăng tẩm triều Nguyễn uy nghi và tinh hoa ẩm thực phong phú. Sức hút của Huế còn đến từ nhịp sống chậm rãi và tình cảm chân thành của con người nơi đây.
                     </p>
                 </div>
@@ -200,21 +200,21 @@
                     <div class="absolute -top-10 -right-10 w-48 h-48 bg-softGold/10 rounded-full blur-2xl pointer-events-none"></div>
                     <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 border-b border-deepGreen/10 pb-6">
                         <div>
-                            <span id="about-huelocal-badge" class="text-xs text-deepGreen font-bold uppercase tracking-widest bg-deepGreen/10 px-4 py-1 rounded-full">Về chúng tôi</span>
-                            <h3 id="about-huelocal-title" class="font-serif text-2xl sm:text-3xl font-bold text-deepGreen mt-2">HueLocal là gì?</h3>
+                            <span data-i18n="aboutLocalBadge" class="text-xs text-deepGreen font-bold uppercase tracking-widest bg-deepGreen/10 px-4 py-1 rounded-full">Về chúng tôi</span>
+                            <h3 data-i18n="aboutLocalTitle" class="font-serif text-2xl sm:text-3xl font-bold text-deepGreen mt-2">HueLocal là gì?</h3>
                         </div>
-                        <div id="about-slogan" class="bg-deepGreen text-cream px-5 py-2.5 rounded-2xl text-xs font-bold italic shadow">
+                        <div data-i18n="aboutSlogan" class="bg-deepGreen text-cream px-5 py-2.5 rounded-2xl text-xs font-bold italic shadow">
                             “Come as a traveler. Leave as a friend.”
                         </div>
                     </div>
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                         <div class="bg-cream p-6 rounded-2xl border border-deepGreen/10 space-y-3">
-                            <h4 id="mission-title" class="font-bold text-deepGreen text-sm flex items-center gap-2"><i class="fa-solid fa-bullseye text-softGold"></i> Mục đích thành lập</h4>
-                            <p id="mission-desc" class="text-xs text-charcoal/80 leading-relaxed">Được điều phối bởi <strong>Nguyễn Phan Hoài Bảo</strong>, HueLocal tạo ra cầu nối gần gũi giữa du khách và người bản địa.</p>
+                            <h4 data-i18n="missionTitle" class="font-bold text-deepGreen text-sm flex items-center gap-2"><i class="fa-solid fa-bullseye text-softGold"></i> Mục đích thành lập</h4>
+                            <p data-i18n="missionDesc" class="text-xs text-charcoal/80 leading-relaxed">Được điều phối bởi <strong>Nguyễn Phan Hoài Bảo</strong>, HueLocal tạo ra cầu nối gần gũi giữa du khách và người bản địa.</p>
                         </div>
                         <div class="bg-cream p-6 rounded-2xl border border-deepGreen/10 space-y-3">
-                            <h4 id="meaning-title" class="font-bold text-deepGreen text-sm flex items-center gap-2"><i class="fa-solid fa-compass text-softGold"></i> Ý nghĩa thương hiệu</h4>
-                            <p id="meaning-desc" class="text-xs text-charcoal/80 leading-relaxed">Sự kết hợp giữa <strong>“Hue”</strong> và <strong>“Local”</strong> thể hiện góc nhìn chân thực, sâu sắc nhất về văn hóa bản địa.</p>
+                            <h4 data-i18n="meaningTitle" class="font-bold text-deepGreen text-sm flex items-center gap-2"><i class="fa-solid fa-compass text-softGold"></i> Ý nghĩa thương hiệu</h4>
+                            <p data-i18n="meaningDesc" class="text-xs text-charcoal/80 leading-relaxed">Sự kết hợp giữa <strong>“Hue”</strong> và <strong>“Local”</strong> thể hiện góc nhìn chân thực, sâu sắc nhất về văn hóa bản địa.</p>
                         </div>
                     </div>
                 </div>
@@ -225,24 +225,24 @@
         <section class="px-6">
             <div class="container mx-auto max-w-6xl space-y-12">
                 <div class="text-center max-w-2xl mx-auto space-y-3">
-                    <h2 id="why-title" class="text-3xl sm:text-4xl font-serif font-bold text-deepGreen">Vì sao là Huế?</h2>
-                    <p id="why-subtitle" class="text-sm text-charcoal/70 font-medium">Ba yếu tố định hình trải nghiệm khác biệt tại vùng đất Cố đô.</p>
+                    <h2 data-i18n="whyTitle" class="text-3xl sm:text-4xl font-serif font-bold text-deepGreen">Vì sao là Huế?</h2>
+                    <p data-i18n="whySubtitle" class="text-sm text-charcoal/70 font-medium">Ba yếu tố định hình trải nghiệm khác biệt tại vùng đất Cố đô.</p>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <div class="glass-card p-8 rounded-[2.5rem] border border-deepGreen/15 space-y-4 shadow-xl hover:-translate-y-1.5 transition duration-300">
                         <div class="w-14 h-14 rounded-2xl bg-deepGreen text-cream flex items-center justify-center text-xl shadow">🏯</div>
-                        <h3 id="why-1-title" class="font-bold text-deepGreen text-xl font-serif">Cố đô di sản</h3>
-                        <p id="why-1-desc" class="text-xs sm:text-sm text-charcoal/80 leading-relaxed">Kinh thành, lăng tẩm và cung điện triều Nguyễn nằm ẩn hiện hòa quyện ngay giữa đời sống thường ngày.</p>
+                        <h3 data-i18n="why1Title" class="font-bold text-deepGreen text-xl font-serif">Cố đô di sản</h3>
+                        <p data-i18n="why1Desc" class="text-xs sm:text-sm text-charcoal/80 leading-relaxed">Kinh thành, lăng tẩm và cung điện triều Nguyễn nằm ẩn hiện hòa quyện ngay giữa đời sống thường ngày.</p>
                     </div>
                     <div class="glass-card p-8 rounded-[2.5rem] border border-deepGreen/15 space-y-4 shadow-xl hover:-translate-y-1.5 transition duration-300">
                         <div class="w-14 h-14 rounded-2xl bg-deepGreen text-cream flex items-center justify-center text-xl shadow">🛶</div>
-                        <h3 id="why-2-title" class="font-bold text-deepGreen text-xl font-serif">Sông Hương chậm rãi</h3>
-                        <p id="why-2-desc" class="text-xs sm:text-sm text-charcoal/80 leading-relaxed">Nhịp sống êm đềm, những chuyến thuyền trên sông và hoàng hôn buông lơi soi bóng xuống mái chùa cổ.</p>
+                        <h3 data-i18n="why2Title" class="font-bold text-deepGreen text-xl font-serif">Sông Hương chậm rãi</h3>
+                        <p data-i18n="why2Desc" class="text-xs sm:text-sm text-charcoal/80 leading-relaxed">Nhịp sống êm đềm, những chuyến thuyền trên sông và hoàng hôn buông lơi soi bóng xuống mái chùa cổ.</p>
                     </div>
                     <div class="glass-card p-8 rounded-[2.5rem] border border-deepGreen/15 space-y-4 shadow-xl hover:-translate-y-1.5 transition duration-300">
                         <div class="w-14 h-14 rounded-2xl bg-deepGreen text-cream flex items-center justify-center text-xl shadow">🍜</div>
-                        <h3 id="why-3-title" class="font-bold text-deepGreen text-xl font-serif">Ẩm thực cung đình</h3>
-                        <p id="why-3-desc" class="text-xs sm:text-sm text-charcoal/80 leading-relaxed">Từ tô bún bò đậm vị đến những món bánh tinh tế gắn liền với văn hóa ẩm thực hoàng gia xưa.</p>
+                        <h3 data-i18n="why3Title" class="font-bold text-deepGreen text-xl font-serif">Ẩm thực cung đình</h3>
+                        <p data-i18n="why3Desc" class="text-xs sm:text-sm text-charcoal/80 leading-relaxed">Từ tô bún bò đậm vị đến những món bánh tinh tế gắn liền với văn hóa ẩm thực hoàng gia xưa.</p>
                     </div>
                 </div>
             </div>
@@ -252,16 +252,16 @@
         <section id="explore" class="py-20 px-6 bg-deepGreen text-cream rounded-[3.5rem] container mx-auto max-w-7xl shadow-2xl">
             <div class="flex flex-col lg:flex-row justify-between items-start lg:items-end mb-16 gap-6">
                 <div class="space-y-3">
-                    <span id="explore-badge" class="text-softGold font-bold uppercase text-xs tracking-widest bg-white/10 px-4 py-1.5 rounded-full">Sitemap Khám Phá</span>
-                    <h2 id="explore-title" class="font-serif text-3xl sm:text-5xl font-bold text-white">Khám phá Huế</h2>
-                    <p id="explore-subtitle" class="text-cream/80 text-sm font-light">Tuyển tập di sản, làng nghề truyền thống và các điểm đến mang đậm dấu ấn hoài niệm.</p>
+                    <span data-i18n="exploreBadge" class="text-softGold font-bold uppercase text-xs tracking-widest bg-white/10 px-4 py-1.5 rounded-full">Sitemap Khám Phá</span>
+                    <h2 data-i18n="exploreTitle" class="font-serif text-3xl sm:text-5xl font-bold text-white">Khám phá Huế</h2>
+                    <p data-i18n="exploreSubtitle" class="text-cream/80 text-sm font-light">Tuyển tập di sản, làng nghề truyền thống và các điểm đến mang đậm dấu ấn hoài niệm.</p>
                 </div>
                 <div class="flex gap-2 flex-wrap bg-white/5 p-2 rounded-2xl border border-white/10 backdrop-blur">
-                    <button onclick="App.filterExplore('all')" id="filter-all" class="explore-btn px-5 py-2.5 rounded-xl bg-cream text-deepGreen text-xs font-bold transition shadow">Tất cả</button>
-                    <button onclick="App.filterExplore('heritage')" id="filter-heritage" class="explore-btn px-5 py-2.5 rounded-xl bg-transparent hover:bg-white/10 text-xs font-semibold transition text-white">Di tích</button>
-                    <button onclick="App.filterExplore('craft')" id="filter-craft" class="explore-btn px-5 py-2.5 rounded-xl bg-transparent hover:bg-white/10 text-xs font-semibold transition text-white">Làng nghề</button>
-                    <button onclick="App.filterExplore('experience')" id="filter-experience" class="explore-btn px-5 py-2.5 rounded-xl bg-transparent hover:bg-white/10 text-xs font-semibold transition text-white">Trải nghiệm</button>
-                    <button onclick="App.filterExplore('hidden')" id="filter-hidden" class="explore-btn px-5 py-2.5 rounded-xl bg-transparent hover:bg-white/10 text-xs font-semibold transition text-white">Hidden Gems</button>
+                    <button onclick="App.filterExplore('all')" id="filter-all" data-i18n="filterAll" class="explore-btn px-5 py-2.5 rounded-xl bg-cream text-deepGreen text-xs font-bold transition shadow">Tất cả</button>
+                    <button onclick="App.filterExplore('heritage')" id="filter-heritage" data-i18n="filterHeritage" class="explore-btn px-5 py-2.5 rounded-xl bg-transparent hover:bg-white/10 text-xs font-semibold transition text-white">Di tích</button>
+                    <button onclick="App.filterExplore('craft')" id="filter-craft" data-i18n="filterCraft" class="explore-btn px-5 py-2.5 rounded-xl bg-transparent hover:bg-white/10 text-xs font-semibold transition text-white">Làng nghề</button>
+                    <button onclick="App.filterExplore('experience')" id="filter-experience" data-i18n="filterExperience" class="explore-btn px-5 py-2.5 rounded-xl bg-transparent hover:bg-white/10 text-xs font-semibold transition text-white">Trải nghiệm</button>
+                    <button onclick="App.filterExplore('hidden')" id="filter-hidden" data-i18n="filterHidden" class="explore-btn px-5 py-2.5 rounded-xl bg-transparent hover:bg-white/10 text-xs font-semibold transition text-white">Hidden Gems</button>
                 </div>
             </div>
 
@@ -272,8 +272,8 @@
                     <div>
                         <div class="h-64 rounded-2xl bg-cover bg-center mb-5 group-hover:scale-[1.02] transition-transform duration-500 shadow-md" style="background-image: url('dainoi.jpg');"></div>
                         <span class="text-[11px] text-softGold font-bold uppercase tracking-wider bg-softGold/10 px-3.5 py-1 rounded-full">Heritage</span>
-                        <h3 id="place-1-title" class="text-2xl font-bold mt-3 text-white group-hover:text-softGold transition font-serif">Đại Nội Huế</h3>
-                        <p id="place-1-desc" class="text-xs text-cream/80 mt-2 leading-relaxed">Trung tâm quyền lực triều Nguyễn xưa với hệ thống cung điện, đền đài tráng lệ...</p>
+                        <h3 class="text-2xl font-bold mt-3 text-white group-hover:text-softGold transition font-serif">Đại Nội Huế</h3>
+                        <p class="text-xs text-cream/80 mt-2 leading-relaxed">Trung tâm quyền lực triều Nguyễn xưa với hệ thống cung điện, đền đài tráng lệ...</p>
                     </div>
                 </div>
                 
@@ -282,8 +282,8 @@
                     <div>
                         <div class="h-64 rounded-2xl bg-cover bg-center mb-5 group-hover:scale-[1.02] transition-transform duration-500 shadow-md" style="background-image: url('nonla.jfif');"></div>
                         <span class="text-[11px] text-softGold font-bold uppercase tracking-wider bg-softGold/10 px-3.5 py-1 rounded-full">Traditional Craft</span>
-                        <h3 id="place-2-title" class="text-2xl font-bold mt-3 text-white group-hover:text-softGold transition font-serif">Làng Nón Lá Tây Hồ</h3>
-                        <p id="place-2-desc" class="text-xs text-cream/80 mt-2 leading-relaxed">Nơi lưu giữ hồn thơ chiếc nón bài thơ xứ Huế qua bàn tay khéo léo của nghệ nhân lâu năm...</p>
+                        <h3 class="text-2xl font-bold mt-3 text-white group-hover:text-softGold transition font-serif">Làng Nón Lá Tây Hồ</h3>
+                        <p class="text-xs text-cream/80 mt-2 leading-relaxed">Nơi lưu giữ hồn thơ chiếc nón bài thơ xứ Huế qua bàn tay khéo léo của nghệ nhân lâu năm...</p>
                     </div>
                 </div>
 
@@ -292,8 +292,8 @@
                     <div>
                         <div class="h-64 rounded-2xl bg-cover bg-center mb-5 group-hover:scale-[1.02] transition-transform duration-500 shadow-md" style="background-image: url('huong.jfif');"></div>
                         <span class="text-[11px] text-softGold font-bold uppercase tracking-wider bg-softGold/10 px-3.5 py-1 rounded-full">Traditional Craft</span>
-                        <h3 id="place-3-title" class="text-2xl font-bold mt-3 text-white group-hover:text-softGold transition font-serif">Làng Hương Thủy Xuân</h3>
-                        <p id="place-3-desc" class="text-xs text-cream/80 mt-2 leading-relaxed">Làng nghề làm hương lâu đời với những bó hương xòe rộng rực rỡ dưới nắng sớm...</p>
+                        <h3 class="text-2xl font-bold mt-3 text-white group-hover:text-softGold transition font-serif">Làng Hương Thủy Xuân</h3>
+                        <p class="text-xs text-cream/80 mt-2 leading-relaxed">Làng nghề làm hương lâu đời với những bó hương xòe rộng rực rỡ dưới nắng sớm...</p>
                     </div>
                 </div>
 
@@ -302,8 +302,8 @@
                     <div>
                         <div class="h-64 rounded-2xl bg-cover bg-center mb-5 group-hover:scale-[1.02] transition-transform duration-500 shadow-md" style="background-image: url('khaidinh.jfif');"></div>
                         <span class="text-[11px] text-softGold font-bold uppercase tracking-wider bg-softGold/10 px-3.5 py-1 rounded-full">Heritage</span>
-                        <h3 id="place-4-title" class="text-2xl font-bold mt-3 text-white group-hover:text-softGold transition font-serif">Lăng Khải Định</h3>
-                        <p id="place-4-desc" class="text-xs text-cream/80 mt-2 leading-relaxed">Kiệt tác kiến trúc khảm sành sứ đỉnh cao, giao thoa văn hóa Đông - Tây độc đáo...</p>
+                        <h3 class="text-2xl font-bold mt-3 text-white group-hover:text-softGold transition font-serif">Lăng Khải Định</h3>
+                        <p class="text-xs text-cream/80 mt-2 leading-relaxed">Kiệt tác kiến trúc khảm sành sứ đỉnh cao, giao thoa văn hóa Đông - Tây độc đáo...</p>
                     </div>
                 </div>
 
@@ -312,8 +312,8 @@
                     <div>
                         <div class="h-64 rounded-2xl bg-cover bg-center mb-5 group-hover:scale-[1.02] transition-transform duration-500 shadow-md" style="background-image: url('tamgiang.jfif');"></div>
                         <span class="text-[11px] text-softGold font-bold uppercase tracking-wider bg-softGold/10 px-3.5 py-1 rounded-full">Scenic / Hidden Gem</span>
-                        <h3 id="place-5-title" class="text-2xl font-bold mt-3 text-white group-hover:text-softGold transition font-serif">Đầm phá Tam Giang</h3>
-                        <p id="place-5-desc" class="text-xs text-cream/80 mt-2 leading-relaxed">Trải nghiệm không gian mênh mông nước và chiêm ngưỡng hoàng hôn rực rỡ đẹp nhất xứ Huế...</p>
+                        <h3 class="text-2xl font-bold mt-3 text-white group-hover:text-softGold transition font-serif">Đầm phá Tam Giang</h3>
+                        <p class="text-xs text-cream/80 mt-2 leading-relaxed">Trải nghiệm không gian mênh mông nước và chiêm ngưỡng hoàng hôn rực rỡ đẹp nhất xứ Huế...</p>
                     </div>
                 </div>
 
@@ -322,8 +322,8 @@
                     <div>
                         <div class="h-64 rounded-2xl bg-cover bg-center mb-5 group-hover:scale-[1.02] transition-transform duration-500 shadow-md" style="background-image: url('doivongcanh.jfif');"></div>
                         <span class="text-[11px] text-softGold font-bold uppercase tracking-wider bg-softGold/10 px-3.5 py-1 rounded-full">Hidden Gem</span>
-                        <h3 id="place-6-title" class="text-2xl font-bold mt-3 text-white group-hover:text-softGold transition font-serif">Đồi Vọng Cảnh</h3>
-                        <p id="place-6-desc" class="text-xs text-cream/80 mt-2 leading-relaxed">Ngắm hoàng hôn thơ mộng bên sông Hương, nơi thời gian như ngừng trôi...</p>
+                        <h3 class="text-2xl font-bold mt-3 text-white group-hover:text-softGold transition font-serif">Đồi Vọng Cảnh</h3>
+                        <p class="text-xs text-cream/80 mt-2 leading-relaxed">Ngắm hoàng hôn thơ mộng bên sông Hương, nơi thời gian như ngừng trôi...</p>
                     </div>
                 </div>
 
@@ -332,8 +332,8 @@
                     <div>
                         <div class="h-64 rounded-2xl bg-cover bg-center mb-5 group-hover:scale-[1.02] transition-transform duration-500 shadow-md" style="background-image: url('thienmu.jfif');"></div>
                         <span class="text-[11px] text-softGold font-bold uppercase tracking-wider bg-softGold/10 px-3.5 py-1 rounded-full">Heritage</span>
-                        <h3 id="place-7-title" class="text-2xl font-bold mt-3 text-white group-hover:text-softGold transition font-serif">Chùa Thiên Mụ</h3>
-                        <p id="place-7-desc" class="text-xs text-cream/80 mt-2 leading-relaxed">Biểu tượng tâm linh lâu đời với Tháp Phước Duyên uy nghiêm soi bóng xuống dòng sông Hương...</p>
+                        <h3 class="text-2xl font-bold mt-3 text-white group-hover:text-softGold transition font-serif">Chùa Thiên Mụ</h3>
+                        <p class="text-xs text-cream/80 mt-2 leading-relaxed">Biểu tượng tâm linh lâu đời với Tháp Phước Duyên uy nghiêm soi bóng xuống dòng sông Hương...</p>
                     </div>
                 </div>
 
@@ -342,8 +342,8 @@
                     <div>
                         <div class="h-64 rounded-2xl bg-cover bg-center mb-5 group-hover:scale-[1.02] transition-transform duration-500 shadow-md" style="background-image: url('minhmang.jfif');"></div>
                         <span class="text-[11px] text-softGold font-bold uppercase tracking-wider bg-softGold/10 px-3.5 py-1 rounded-full">Heritage</span>
-                        <h3 id="place-8-title" class="text-2xl font-bold mt-3 text-white group-hover:text-softGold transition font-serif">Lăng Minh Mạng</h3>
-                        <p id="place-8-desc" class="text-xs text-cream/80 mt-2 leading-relaxed">Quần thể kiến trúc hoàng gia mang đậm triết lý Nho giáo, bao bọc bởi hồ nước và rừng thông tĩnh lặng...</p>
+                        <h3 class="text-2xl font-bold mt-3 text-white group-hover:text-softGold transition font-serif">Lăng Minh Mạng</h3>
+                        <p class="text-xs text-cream/80 mt-2 leading-relaxed">Quần thể kiến trúc hoàng gia mang đậm triết lý Nho giáo, bao bọc bởi hồ nước và rừng thông tĩnh lặng...</p>
                     </div>
                 </div>
 
@@ -352,8 +352,8 @@
                     <div>
                         <div class="h-64 rounded-2xl bg-cover bg-center mb-5 group-hover:scale-[1.02] transition-transform duration-500 shadow-md" style="background-image: url('andinh.jfif');"></div>
                         <span class="text-[11px] text-softGold font-bold uppercase tracking-wider bg-softGold/10 px-3.5 py-1 rounded-full">Heritage</span>
-                        <h3 id="place-9-title" class="text-2xl font-bold mt-3 text-white group-hover:text-softGold transition font-serif">Cung An Định</h3>
-                        <p id="place-9-desc" class="text-xs text-cream/80 mt-2 leading-relaxed">Dinh thự tuyệt đẹp của vua Khải Định và Bảo Đại với những đường nét kiến trúc Tây phương tinh tế...</p>
+                        <h3 class="text-2xl font-bold mt-3 text-white group-hover:text-softGold transition font-serif">Cung An Định</h3>
+                        <p class="text-xs text-cream/80 mt-2 leading-relaxed">Dinh thự tuyệt đẹp của vua Khải Định và Bảo Đại với những đường nét kiến trúc Tây phương tinh tế...</p>
                     </div>
                 </div>
 
@@ -362,8 +362,8 @@
                     <div>
                         <div class="h-64 rounded-2xl bg-cover bg-center mb-5 group-hover:scale-[1.02] transition-transform duration-500 shadow-md" style="background-image: url('hoagiay.jfif');"></div>
                         <span class="text-[11px] text-softGold font-bold uppercase tracking-wider bg-softGold/10 px-3.5 py-1 rounded-full">Traditional Craft</span>
-                        <h3 id="place-10-title" class="text-2xl font-bold mt-3 text-white group-hover:text-softGold transition font-serif">Làng hoa giấy Thanh Tiên</h3>
-                        <p id="place-10-desc" class="text-xs text-cream/80 mt-2 leading-relaxed">Nơi lưu giữ nghệ thuật làm hoa thủ công truyền thống bên dòng sông Truồi và phá Tam Giang...</p>
+                        <h3 class="text-2xl font-bold mt-3 text-white group-hover:text-softGold transition font-serif">Làng hoa giấy Thanh Tiên</h3>
+                        <p class="text-xs text-cream/80 mt-2 leading-relaxed">Nơi lưu giữ nghệ thuật làm hoa thủ công truyền thống bên dòng sông Truồi và phá Tam Giang...</p>
                     </div>
                 </div>
 
@@ -372,8 +372,8 @@
                     <div>
                         <div class="h-64 rounded-2xl bg-cover bg-center mb-5 group-hover:scale-[1.02] transition-transform duration-500 shadow-md" style="background-image: url('colau.jpg');"></div>
                         <span class="text-[11px] text-softGold font-bold uppercase tracking-wider bg-softGold/10 px-3.5 py-1 rounded-full">Experiential Activities</span>
-                        <h3 id="place-11-title" class="text-2xl font-bold mt-3 text-white group-hover:text-softGold transition font-serif">Cổ Lầu</h3>
-                        <p id="place-11-desc" class="text-xs text-cream/80 mt-2 leading-relaxed">Điểm dừng chân thư giãn tuyệt vời với kiến trúc cổ kính và không gian yên bình đậm chất Cố đô...</p>
+                        <h3 class="text-2xl font-bold mt-3 text-white group-hover:text-softGold transition font-serif">Cổ Lầu</h3>
+                        <p class="text-xs text-cream/80 mt-2 leading-relaxed">Điểm dừng chân thư giãn tuyệt vời với kiến trúc cổ kính và không gian yên bình đậm chất Cố đô...</p>
                     </div>
                 </div>
 
@@ -382,8 +382,8 @@
                     <div>
                         <div class="h-64 rounded-2xl bg-cover bg-center mb-5 group-hover:scale-[1.02] transition-transform duration-500 shadow-md" style="background-image: url('tiemaodaicolau.jpg');"></div>
                         <span class="text-[11px] text-softGold font-bold uppercase tracking-wider bg-softGold/10 px-3.5 py-1 rounded-full">Experiential Activities</span>
-                        <h3 id="place-13-title" class="text-2xl font-bold mt-3 text-white group-hover:text-softGold transition font-serif">ÁO dài truyền thống</h3>
-                        <p id="place-13-desc" class="text-xs text-cream/80 mt-2 leading-relaxed">Trải nghiệm mặc trang phục áo dài truyền thống và check-in không gian hoài cổ giữa lòng Cố đô...</p>
+                        <h3 class="text-2xl font-bold mt-3 text-white group-hover:text-softGold transition font-serif">ÁO dài truyền thống</h3>
+                        <p class="text-xs text-cream/80 mt-2 leading-relaxed">Trải nghiệm mặc trang phục áo dài truyền thống và check-in không gian hoài cổ giữa lòng Cố đô...</p>
                     </div>
                 </div>
 
@@ -392,8 +392,8 @@
                     <div>
                         <div class="h-64 rounded-2xl bg-cover bg-center mb-5 group-hover:scale-[1.02] transition-transform duration-500 shadow-md" style="background-image: url('thuytien.jfif');"></div>
                         <span class="text-[11px] text-softGold font-bold uppercase tracking-wider bg-softGold/10 px-3.5 py-1 rounded-full">Hidden Gem</span>
-                        <h3 id="place-12-title" class="text-2xl font-bold mt-3 text-white group-hover:text-softGold transition font-serif">Hồ Thủy Tiên</h3>
-                        <p id="place-12-desc" class="text-xs text-cream/80 mt-2 leading-relaxed">Khu công viên nước ma mị nằm ẩn mình giữa rừng thông Thiên An, thu hút đông đảo du khách tò mò...</p>
+                        <h3 class="text-2xl font-bold mt-3 text-white group-hover:text-softGold transition font-serif">Hồ Thủy Tiên</h3>
+                        <p class="text-xs text-cream/80 mt-2 leading-relaxed">Khu công viên nước ma mị nằm ẩn mình giữa rừng thông Thiên An, thu hút đông đảo du khách tò mò...</p>
                     </div>
                 </div>
             </div>
@@ -404,16 +404,16 @@
             <div class="container mx-auto max-w-6xl">
                 <div class="bg-white rounded-[3rem] p-10 sm:p-16 shadow-2xl border border-deepGreen/15 space-y-12">
                     <div class="text-center space-y-3 max-w-2xl mx-auto">
-                        <span id="ai-badge" class="text-deepGreen font-bold uppercase text-xs tracking-widest bg-deepGreen/10 px-4 py-1.5 rounded-full">Góc nhìn công nghệ</span>
-                        <h2 id="ai-title" class="font-serif text-3xl sm:text-5xl font-bold text-deepGreen">AI với du lịch</h2>
+                        <span data-i18n="aiBadge" class="text-deepGreen font-bold uppercase text-xs tracking-widest bg-deepGreen/10 px-4 py-1.5 rounded-full">Góc nhìn công nghệ</span>
+                        <h2 data-i18n="aiTitle" class="font-serif text-3xl sm:text-5xl font-bold text-deepGreen">AI với du lịch</h2>
                     </div>
                     
                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                         <div class="space-y-4 text-sm md:text-base text-charcoal/80 leading-relaxed font-light text-justify">
-                            <p id="ai-desc-1">Chúng mình không phủ nhận sự tiện lợi và những giá trị mà AI mang lại. Nhưng chúng mình tin rằng, du lịch không chỉ là những dòng thông tin được cung cấp, mà còn là những câu chuyện được kể bằng cảm xúc, những nụ cười trong giao tiếp và sự kết nối giữa người với người.</p>
-                            <p id="ai-desc-2">AI có thể giúp du khách biết thêm về Huế, nhưng tình yêu của một người con xứ Huế dành cho quê hương mình lại là một câu chuyện khác.</p>
-                            <p id="ai-desc-3">Chúng mình không muốn đứng ngoài sự phát triển của công nghệ, nhưng cũng không muốn một ngày nào đó, những người trẻ yêu du lịch, yêu văn hóa và muốn kể câu chuyện quê hương lại trở nên không còn cần thiết.</p>
-                            <p id="ai-desc-4" class="font-bold text-deepGreen pt-2">HueLocal chọn đồng hành cùng công nghệ, chứ không chọn để công nghệ thay thế con người. Bởi chúng mình tin rằng, công nghệ có thể kể một câu chuyện, nhưng chính con người mới thổi hồn vào câu chuyện ấy. 💜</p>
+                            <p data-i18n="aiDesc1">Chúng mình không phủ nhận sự tiện lợi và những giá trị mà AI mang lại. Nhưng chúng mình tin rằng, du lịch không chỉ là những dòng thông tin được cung cấp, mà còn là những câu chuyện được kể bằng cảm xúc, những nụ cười trong giao tiếp và sự kết nối giữa người với người.</p>
+                            <p data-i18n="aiDesc2">AI có thể giúp du khách biết thêm về Huế, nhưng tình yêu của một người con xứ Huế dành cho quê hương mình lại là một câu chuyện khác.</p>
+                            <p data-i18n="aiDesc3">Chúng mình không muốn đứng ngoài sự phát triển của công nghệ, nhưng cũng không muốn một ngày nào đó, những người trẻ yêu du lịch, yêu văn hóa và muốn kể câu chuyện quê hương lại trở nên không còn cần thiết.</p>
+                            <p data-i18n="aiDesc4" class="font-bold text-deepGreen pt-2">HueLocal chọn đồng hành cùng công nghệ, chứ không chọn để công nghệ thay thế con người. Bởi chúng mình tin rằng, công nghệ có thể kể một câu chuyện, nhưng chính con người mới thổi hồn vào câu chuyện ấy. 💜</p>
                         </div>
                         <div class="rounded-[2.5rem] overflow-hidden shadow-2xl border border-deepGreen/20 bg-black relative group">
                             <video autoplay muted loop playsinline class="w-full h-auto object-cover max-h-[440px] group-hover:scale-105 transition duration-700">
@@ -430,42 +430,42 @@
         <section id="stories" class="px-6">
             <div class="container mx-auto max-w-7xl space-y-16">
                 <div class="text-center max-w-3xl mx-auto space-y-4">
-                    <span id="stories-badge" class="text-deepGreen font-bold uppercase text-xs tracking-widest bg-deepGreen/10 px-4 py-1.5 rounded-full">Nhật ký hành trình</span>
-                    <h2 id="stories-title" class="font-serif text-3xl sm:text-5xl font-bold text-deepGreen">Những chuyến đi qua lăng kính bản địa</h2>
-                    <p id="stories-subtitle" class="text-charcoal/80 font-medium text-sm md:text-base">Mỗi bước chân qua những con ngõ nhỏ, mỗi sớm mai bên dòng Hương là một câu chuyện tình yêu viết riêng cho Huế.</p>
+                    <span data-i18n="storiesBadge" class="text-deepGreen font-bold uppercase text-xs tracking-widest bg-deepGreen/10 px-4 py-1.5 rounded-full">Nhật ký hành trình</span>
+                    <h2 data-i18n="storiesTitle" class="font-serif text-3xl sm:text-5xl font-bold text-deepGreen">Những chuyến đi qua lăng kính bản địa</h2>
+                    <p data-i18n="storiesSubtitle" class="text-charcoal/80 font-medium text-sm md:text-base">Mỗi bước chân qua những con ngõ nhỏ, mỗi sớm mai bên dòng Hương là một câu chuyện tình yêu viết riêng cho Huế.</p>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div class="bg-white rounded-[2.5rem] overflow-hidden shadow-xl border border-deepGreen/15 flex flex-col group hover:-translate-y-1.5 transition duration-500">
                         <div class="h-80 bg-cover bg-center group-hover:scale-105 transition duration-700" style="background-image: url('xemay.jpg');"></div>
                         <div class="p-8 space-y-3">
-                            <span id="story-tag-1" class="text-xs text-deepGreen font-bold uppercase tracking-wider bg-deepGreen/10 px-3.5 py-1 rounded-full">Phượt xứ Huế</span>
-                            <h3 id="story-h-1" class="text-2xl font-bold text-deepGreen font-serif">Vi vu trên yên xe máy</h3>
-                            <p id="story-p-1" class="text-xs sm:text-sm text-charcoal/80 leading-relaxed font-light">“Lên xe và đi thôi! Cùng du khách nước ngoài vi vu khám phá những cung đường tuyệt đẹp quanh Cố đô. Come as a traveler, leave as a friend.”</p>
+                            <span data-i18n="storyTag1" class="text-xs text-deepGreen font-bold uppercase tracking-wider bg-deepGreen/10 px-3.5 py-1 rounded-full">Phượt xứ Huế</span>
+                            <h3 data-i18n="storyH1" class="text-2xl font-bold text-deepGreen font-serif">Vi vu trên yên xe máy</h3>
+                            <p data-i18n="storyP1" class="text-xs sm:text-sm text-charcoal/80 leading-relaxed font-light">“Lên xe và đi thôi! Cùng du khách nước ngoài vi vu khám phá những cung đường tuyệt đẹp quanh Cố đô. Come as a traveler, leave as a friend.”</p>
                         </div>
                     </div>
                     <div class="bg-white rounded-[2.5rem] overflow-hidden shadow-xl border border-deepGreen/15 flex flex-col group hover:-translate-y-1.5 transition duration-500">
                         <div class="h-80 bg-cover bg-center group-hover:scale-105 transition duration-700" style="background-image: url('daden.jpg');"></div>
                         <div class="p-8 space-y-3">
-                            <span id="story-tag-2" class="text-xs text-deepGreen font-bold uppercase tracking-wider bg-deepGreen/10 px-3.5 py-1 rounded-full">Giao lưu văn hóa</span>
-                            <h3 id="story-h-2" class="text-2xl font-bold text-deepGreen font-serif">Khoảnh khắc kết nối</h3>
-                            <p id="story-p-2" class="text-xs sm:text-sm text-charcoal/80 leading-relaxed font-light">“Nụ cười rạng rỡ và những khoảnh khắc kết nối không khoảng cách giữa những người bạn phương xa và Local Guide nhà HueLocal.”</p>
+                            <span data-i18n="storyTag2" class="text-xs text-deepGreen font-bold uppercase tracking-wider bg-deepGreen/10 px-3.5 py-1 rounded-full">Giao lưu văn hóa</span>
+                            <h3 data-i18n="storyH2" class="text-2xl font-bold text-deepGreen font-serif">Khoảnh khắc kết nối</h3>
+                            <p data-i18n="storyP2" class="text-xs sm:text-sm text-charcoal/80 leading-relaxed font-light">“Nụ cười rạng rỡ và những khoảnh khắc kết nối không khoảng cách giữa những người bạn phương xa và Local Guide nhà HueLocal.”</p>
                         </div>
                     </div>
                     <div class="bg-white rounded-[2.5rem] overflow-hidden shadow-xl border border-deepGreen/15 flex flex-col group hover:-translate-y-1.5 transition duration-500">
                         <div class="h-80 bg-cover bg-center group-hover:scale-105 transition duration-700" style="background-image: url('hunghocuoi.jpg');"></div>
                         <div class="p-8 space-y-3">
-                            <span id="story-tag-3" class="text-xs text-deepGreen font-bold uppercase tracking-wider bg-deepGreen/10 px-3.5 py-1 rounded-full">Tình bạn phương xa</span>
-                            <h3 id="story-h-3" class="text-2xl font-bold text-deepGreen font-serif">Những người bạn mới</h3>
-                            <p id="story-p-3" class="text-xs sm:text-sm text-charcoal/80 leading-relaxed font-light">“Đúng với tinh thần HueLocal: Từ những vị khách du lịch xa lạ, chúng ta gặp nhau và trở thành những người bạn thân thiết.”</p>
+                            <span data-i18n="storyTag3" class="text-xs text-deepGreen font-bold uppercase tracking-wider bg-deepGreen/10 px-3.5 py-1 rounded-full">Tình bạn phương xa</span>
+                            <h3 data-i18n="storyH3" class="text-2xl font-bold text-deepGreen font-serif">Những người bạn mới</h3>
+                            <p data-i18n="storyP3" class="text-xs sm:text-sm text-charcoal/80 leading-relaxed font-light">“Đúng với tinh thần HueLocal: Từ những vị khách du lịch xa lạ, chúng ta gặp nhau và trở thành những người bạn thân thiết.”</p>
                         </div>
                     </div>
                     <div class="bg-white rounded-[2.5rem] overflow-hidden shadow-xl border border-deepGreen/15 flex flex-col group hover:-translate-y-1.5 transition duration-500">
                         <div class="h-80 bg-cover bg-center group-hover:scale-105 transition duration-700" style="background-image: url('aodaideptrai.jpg');"></div>
                         <div class="p-8 space-y-3">
-                            <span id="story-tag-4" class="text-xs text-deepGreen font-bold uppercase tracking-wider bg-deepGreen/10 px-3.5 py-1 rounded-full">Cố đô hoài niệm</span>
-                            <h3 id="story-h-4" class="text-2xl font-bold text-deepGreen font-serif">Dáng vẻ truyền thống</h3>
-                            <p id="story-p-4" class="text-xs sm:text-sm text-charcoal/80 leading-relaxed font-light">“Khoác lên mình tà áo dài truyền thống, bước qua khung cổng đậm chất Cố đô để cảm nhận trọn vẹn hồn thơ xứ Huế.”</p>
+                            <span data-i18n="storyTag4" class="text-xs text-deepGreen font-bold uppercase tracking-wider bg-deepGreen/10 px-3.5 py-1 rounded-full">Cố đô hoài niệm</span>
+                            <h3 data-i18n="storyH4" class="text-2xl font-bold text-deepGreen font-serif">Dáng vẻ truyền thống</h3>
+                            <p data-i18n="storyP4" class="text-xs sm:text-sm text-charcoal/80 leading-relaxed font-light">“Khoác lên mình tà áo dài truyền thống, bước qua khung cổng đậm chất Cố đô để cảm nhận trọn vẹn hồn thơ xứ Huế.”</p>
                         </div>
                     </div>
                 </div>
@@ -477,11 +477,11 @@
             <div class="container mx-auto max-w-5xl space-y-12">
                 <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
                     <div class="space-y-3">
-                        <span id="partners-badge" class="text-deepGreen font-bold uppercase text-xs tracking-widest bg-deepGreen/10 px-4 py-1.5 rounded-full">Hệ sinh thái liên kết</span>
-                        <h2 id="partners-title" class="text-3xl sm:text-5xl font-bold text-deepGreen font-serif">Đối tác địa phương</h2>
-                        <p id="partners-subtitle" class="text-charcoal/80 font-medium text-sm">Đồng hành cùng các thương hiệu lưu trú, ẩm thực và dịch vụ hàng đầu tại Huế.</p>
+                        <span data-i18n="partnersBadge" class="text-deepGreen font-bold uppercase text-xs tracking-widest bg-deepGreen/10 px-4 py-1.5 rounded-full">Hệ sinh thái liên kết</span>
+                        <h2 data-i18n="partnersTitle" class="text-3xl sm:text-5xl font-bold text-deepGreen font-serif">Đối tác địa phương</h2>
+                        <p data-i18n="partnersSubtitle" class="text-charcoal/80 font-medium text-sm">Đồng hành cùng các thương hiệu lưu trú, ẩm thực và dịch vụ hàng đầu tại Huế.</p>
                     </div>
-                    <button onclick="App.openPartnerModal()" id="partner-btn" class="bg-deepGreen text-cream px-8 py-3.5 rounded-2xl font-bold hover:bg-deepGreen/90 transition shadow-lg shrink-0">Trở thành đối tác</button>
+                    <button onclick="App.openPartnerModal()" data-i18n="partnerBtn" class="bg-deepGreen text-cream px-8 py-3.5 rounded-2xl font-bold hover:bg-deepGreen/90 transition shadow-lg shrink-0">Trở thành đối tác</button>
                 </div>
 
                 <div class="glass-card rounded-[3rem] p-10 sm:p-14 shadow-2xl border border-deepGreen/15 max-w-2xl mx-auto text-center space-y-8">
@@ -489,7 +489,7 @@
                         <img src="rrlmvuong.jpg" alt="Rồng Rắn Lên Mây" class="w-full h-auto object-cover rounded-2xl shadow-md">
                     </div>
                     <div class="space-y-2">
-                        <span id="partner-sub-tag" class="text-xs text-deepGreen font-bold uppercase tracking-widest bg-deepGreen/10 px-4 py-1 rounded-full">Đồng hành cùng HueLocal</span>
+                        <span data-i18n="partnerSubTag" class="text-xs text-deepGreen font-bold uppercase tracking-widest bg-deepGreen/10 px-4 py-1 rounded-full">Đồng hành cùng HueLocal</span>
                         <h3 class="text-3xl sm:text-4xl font-black text-deepGreen tracking-wide pt-2" style="font-family: Arial, sans-serif;">Rồng Rắn Lên Mây</h3>
                     </div>
                     <div class="flex flex-col gap-3">
@@ -514,42 +514,42 @@
         <section id="team" class="px-6">
             <div class="container mx-auto max-w-7xl space-y-16">
                 <div class="text-center max-w-3xl mx-auto space-y-4">
-                    <span id="team-badge" class="text-deepGreen font-bold uppercase text-xs tracking-widest bg-deepGreen/10 px-4 py-1.5 rounded-full">Đội ngũ sáng lập</span>
-                    <h2 id="team-title" class="font-serif text-3xl sm:text-5xl font-bold text-deepGreen">Thành viên HueLocal</h2>
-                    <p id="team-subtitle" class="text-charcoal/80 font-medium text-sm md:text-base">Những bạn trẻ đam mê công nghệ và khát vọng quảng bá văn hóa Cố đô.</p>
+                    <span data-i18n="teamBadge" class="text-deepGreen font-bold uppercase text-xs tracking-widest bg-deepGreen/10 px-4 py-1.5 rounded-full">Đội ngũ sáng lập</span>
+                    <h2 data-i18n="teamTitle" class="font-serif text-3xl sm:text-5xl font-bold text-deepGreen">Thành viên HueLocal</h2>
+                    <p data-i18n="teamSubtitle" class="text-charcoal/80 font-medium text-sm md:text-base">Những bạn trẻ đam mê công nghệ và khát vọng quảng bá văn hóa Cố đô.</p>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div class="bg-cream rounded-[2.5rem] p-8 md:p-10 border border-deepGreen/15 flex flex-col sm:flex-row items-center gap-8 shadow-xl group hover:border-deepGreen hover:shadow-2xl transition duration-300">
                         <div class="w-36 h-36 rounded-3xl bg-cover bg-center shrink-0 shadow-lg border-2 border-deepGreen group-hover:scale-105 transition duration-300" style="background-image: url('anhbao.jpg');"></div>
                         <div class="text-center sm:text-left space-y-2">
-                            <span class="text-xs text-deepGreen font-bold uppercase tracking-wider bg-deepGreen/10 px-3.5 py-1 rounded-full">Leader</span>
+                            <span data-i18n="roleLeader" class="text-xs text-deepGreen font-bold uppercase tracking-wider bg-deepGreen/10 px-3.5 py-1 rounded-full">Leader</span>
                             <h3 class="text-2xl font-bold text-deepGreen font-serif pt-1">Nguyễn Phan Hoài Bảo</h3>
-                            <p id="member-desc-1" class="text-xs md:text-sm text-charcoal/80 leading-relaxed font-light">Định hướng chiến lược, điều phối hoạt động chung và dẫn dắt đội ngũ phát triển dự án HueLocal.</p>
+                            <p data-i18n="memberDesc1" class="text-xs md:text-sm text-charcoal/80 leading-relaxed font-light">Định hướng chiến lược, điều phối hoạt động chung và dẫn dắt đội ngũ phát triển dự án HueLocal.</p>
                         </div>
                     </div>
                     <div class="bg-cream rounded-[2.5rem] p-8 md:p-10 border border-deepGreen/15 flex flex-col sm:flex-row items-center gap-8 shadow-xl group hover:border-deepGreen hover:shadow-2xl transition duration-300">
                         <div class="w-36 h-36 rounded-3xl bg-cover bg-center shrink-0 shadow-lg border-2 border-deepGreen group-hover:scale-105 transition duration-300" style="background-image: url('anhhieu.jpg');"></div>
                         <div class="text-center sm:text-left space-y-2">
-                            <span class="text-xs text-deepGreen font-bold uppercase tracking-wider bg-deepGreen/10 px-3.5 py-1 rounded-full">Profile picture</span>
+                            <span data-i18n="roleProfile" class="text-xs text-deepGreen font-bold uppercase tracking-wider bg-deepGreen/10 px-3.5 py-1 rounded-full">Profile picture</span>
                             <h3 class="text-2xl font-bold text-deepGreen font-serif pt-1">Phạm Gia Hiếu</h3>
-                            <p id="member-desc-2" class="text-xs md:text-sm text-charcoal/80 leading-relaxed font-light">Thiết kế giao diện, hình ảnh thương hiệu và định hình phong cách thẩm mỹ mang đậm dấu ấn Cố đô.</p>
+                            <p data-i18n="memberDesc2" class="text-xs md:text-sm text-charcoal/80 leading-relaxed font-light">Thiết kế giao diện, hình ảnh thương hiệu và định hình phong cách thẩm mỹ mang đậm dấu ấn Cố đô.</p>
                         </div>
                     </div>
                     <div class="bg-cream rounded-[2.5rem] p-8 md:p-10 border border-deepGreen/15 flex flex-col sm:flex-row items-center gap-8 shadow-xl group hover:border-deepGreen hover:shadow-2xl transition duration-300">
                         <div class="w-36 h-36 rounded-3xl bg-cover bg-center shrink-0 shadow-lg border-2 border-deepGreen group-hover:scale-105 transition duration-300" style="background-image: url('hungho.jpg');"></div>
                         <div class="text-center sm:text-left space-y-2">
-                            <span class="text-xs text-deepGreen font-bold uppercase tracking-wider bg-deepGreen/10 px-3.5 py-1 rounded-full">Manager</span>
+                            <span data-i18n="roleManager" class="text-xs text-deepGreen font-bold uppercase tracking-wider bg-deepGreen/10 px-3.5 py-1 rounded-full">Manager</span>
                             <h3 class="text-2xl font-bold text-deepGreen font-serif pt-1">Hồ Hùng</h3>
-                            <p id="member-desc-3" class="text-xs md:text-sm text-charcoal/80 leading-relaxed font-light">Quản lý vận hành, kế hoạch triển khai và kết nối các đối tác dịch vụ trong hệ sinh thái.</p>
+                            <p data-i18n="memberDesc3" class="text-xs md:text-sm text-charcoal/80 leading-relaxed font-light">Quản lý vận hành, kế hoạch triển khai và kết nối các đối tác dịch vụ trong hệ sinh thái.</p>
                         </div>
                     </div>
                     <div class="bg-cream rounded-[2.5rem] p-8 md:p-10 border border-deepGreen/15 flex flex-col sm:flex-row items-center gap-8 shadow-xl group hover:border-deepGreen hover:shadow-2xl transition duration-300">
                         <div class="w-36 h-36 rounded-3xl bg-cover bg-center shrink-0 shadow-lg border-2 border-deepGreen group-hover:scale-105 transition duration-300" style="background-image: url('minhdat.jpg');"></div>
                         <div class="text-center sm:text-left space-y-2">
-                            <span class="text-xs text-deepGreen font-bold uppercase tracking-wider bg-deepGreen/10 px-3.5 py-1 rounded-full">Media leader</span>
+                            <span data-i18n="roleMedia" class="text-xs text-deepGreen font-bold uppercase tracking-wider bg-deepGreen/10 px-3.5 py-1 rounded-full">Media leader</span>
                             <h3 class="text-2xl font-bold text-deepGreen font-serif pt-1">Ngô Hoàng Minh Đạt</h3>
-                            <p id="member-desc-4" class="text-xs md:text-sm text-charcoal/80 leading-relaxed font-light">Dẫn dắt chiến lược truyền thông, kỹ thuật hệ thống web, lập trình CMS và tích hợp dữ liệu.</p>
+                            <p data-i18n="memberDesc4" class="text-xs md:text-sm text-charcoal/80 leading-relaxed font-light">Dẫn dắt chiến lược truyền thông, kỹ thuật hệ thống web, lập trình CMS và tích hợp dữ liệu.</p>
                         </div>
                     </div>
                 </div>
@@ -568,40 +568,40 @@
             <div class="container mx-auto max-w-4xl">
                 <div class="bg-white/95 backdrop-blur-2xl rounded-[3rem] p-10 md:p-16 shadow-2xl border border-deepGreen/15">
                     <div class="text-center mb-12 space-y-3">
-                        <span id="contact-badge" class="text-deepGreen font-bold uppercase text-xs tracking-widest bg-deepGreen/10 px-4 py-1.5 rounded-full">Hỗ trợ 24/7</span>
-                        <h2 id="contact-title" class="font-serif text-3xl sm:text-4xl font-bold text-deepGreen">Liên hệ & Đặt trải nghiệm</h2>
-                        <p id="contact-subtitle" class="text-charcoal/80 font-medium text-sm">Điền thông tin chi tiết để đội ngũ HueLocal sắp xếp lịch trình tốt nhất cho bạn.</p>
+                        <span data-i18n="contactBadge" class="text-deepGreen font-bold uppercase text-xs tracking-widest bg-deepGreen/10 px-4 py-1.5 rounded-full">Hỗ trợ 24/7</span>
+                        <h2 data-i18n="contactTitle" class="font-serif text-3xl sm:text-4xl font-bold text-deepGreen">Liên hệ & Đặt trải nghiệm</h2>
+                        <p data-i18n="contactSubtitle" class="text-charcoal/80 font-medium text-sm">Điền thông tin chi tiết để đội ngũ HueLocal sắp xếp lịch trình tốt nhất cho bạn.</p>
                     </div>
 
                     <form onsubmit="App.handleContactSubmit(event)" class="space-y-6">
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div>
-                                <label id="label-name" class="block text-xs font-bold text-deepGreen uppercase mb-2">Họ và tên</label>
+                                <label data-i18n="labelName" class="block text-xs font-bold text-deepGreen uppercase mb-2">Họ và tên</label>
                                 <input type="text" id="contactName" required class="w-full bg-cream border border-deepGreen/20 rounded-2xl px-5 py-4 text-sm text-charcoal focus:outline-none focus:border-deepGreen transition shadow-inner">
                             </div>
                             <div>
-                                <label id="label-contact" class="block text-xs font-bold text-deepGreen uppercase mb-2">Email / WhatsApp / Số điện thoại</label>
+                                <label data-i18n="labelContact" class="block text-xs font-bold text-deepGreen uppercase mb-2">Email / WhatsApp / Số điện thoại</label>
                                 <input type="text" id="contactEmail" required class="w-full bg-cream border border-deepGreen/20 rounded-2xl px-5 py-4 text-sm text-charcoal focus:outline-none focus:border-deepGreen transition shadow-inner">
                             </div>
                         </div>
 
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div>
-                                <label id="label-date" class="block text-xs font-bold text-deepGreen uppercase mb-2">Ngày mong muốn đi</label>
+                                <label data-i18n="labelDate" class="block text-xs font-bold text-deepGreen uppercase mb-2">Ngày mong muốn đi</label>
                                 <input type="date" id="contactDate" required class="w-full bg-cream border border-deepGreen/20 rounded-2xl px-5 py-4 text-sm text-charcoal focus:outline-none focus:border-deepGreen transition shadow-inner">
                             </div>
                             <div>
-                                <label id="label-guests" class="block text-xs font-bold text-deepGreen uppercase mb-2">Số lượng khách</label>
+                                <label data-i18n="labelGuests" class="block text-xs font-bold text-deepGreen uppercase mb-2">Số lượng khách</label>
                                 <input type="number" id="contactGuests" min="1" value="2" required class="w-full bg-cream border border-deepGreen/20 rounded-2xl px-5 py-4 text-sm text-charcoal focus:outline-none focus:border-deepGreen transition shadow-inner">
                             </div>
                         </div>
 
                         <div>
-                            <label id="label-msg" class="block text-xs font-bold text-deepGreen uppercase mb-2">Yêu cầu đặc biệt / Lời nhắn</label>
+                            <label data-i18n="labelMsg" class="block text-xs font-bold text-deepGreen uppercase mb-2">Yêu cầu đặc biệt / Lời nhắn</label>
                             <textarea id="contactMsg" rows="4" class="w-full bg-cream border border-deepGreen/20 rounded-2xl px-5 py-4 text-sm text-charcoal focus:outline-none focus:border-deepGreen transition shadow-inner" placeholder="Nhập ghi chú hoặc yêu cầu riêng cho chuyến đi..."></textarea>
                         </div>
 
-                        <button type="submit" id="submit-contact-btn" class="w-full bg-deepGreen text-cream py-4 rounded-2xl font-bold hover:bg-deepGreen/90 transition shadow-xl transform hover:-translate-y-0.5">Gửi yêu cầu đặt chỗ</button>
+                        <button type="submit" data-i18n="submitContactBtn" class="w-full bg-deepGreen text-cream py-4 rounded-2xl font-bold hover:bg-deepGreen/90 transition shadow-xl transform hover:-translate-y-0.5">Gửi yêu cầu đặt chỗ</button>
                     </form>
                 </div>
             </div>
@@ -626,7 +626,7 @@
         <div class="container mx-auto max-w-7xl grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
             <div class="space-y-4">
                 <h3 class="text-3xl font-black text-white tracking-wider">HUE<span class="text-softGold">LOCAL</span></h3>
-                <p id="footer-desc" class="text-xs md:text-sm leading-relaxed text-cream/80">Discover Hue through local eyes. Nền tảng du lịch bản địa hàng đầu tại Cố đô Huế.</p>
+                <p data-i18n="footerDesc" class="text-xs md:text-sm leading-relaxed text-cream/80">Discover Hue through local eyes. Nền tảng du lịch bản địa hàng đầu tại Cố đô Huế.</p>
                 <div class="flex items-center gap-4 pt-3">
                     <div class="w-16 h-16 bg-white p-1 rounded-2xl shadow-md border border-white/20">
                         <img src="wattap.PNG" alt="QR Code 1" class="w-full h-full object-contain">
@@ -637,35 +637,35 @@
                 </div>
             </div>
             <div>
-                <h4 id="footer-col-1-title" class="font-bold text-white text-sm mb-5 uppercase tracking-wider">Khám phá</h4>
+                <h4 data-i18n="footerCol1" class="font-bold text-white text-sm mb-5 uppercase tracking-wider">Khám phá</h4>
                 <ul class="space-y-3 text-xs md:text-sm">
-                    <li><a href="#explore" id="footer-link-1" class="hover:text-softGold transition">Di tích lịch sử</a></li>
-                    <li><a href="#explore" id="footer-link-2" class="hover:text-softGold transition">Ẩm thực cố đô</a></li>
-                    <li><a href="#ai-tourism" id="footer-link-ai" class="hover:text-softGold transition">AI với du lịch</a></li>
-                    <li><a href="#stories" id="footer-link-stories" class="hover:text-softGold transition">Những chuyến đi</a></li>
+                    <li><a href="#explore" data-i18n="footerLink1" class="hover:text-softGold transition">Di tích lịch sử</a></li>
+                    <li><a href="#explore" data-i18n="footerLink2" class="hover:text-softGold transition">Ẩm thực cố đô</a></li>
+                    <li><a href="#ai-tourism" data-i18n="footerLinkAi" class="hover:text-softGold transition">AI với du lịch</a></li>
+                    <li><a href="#stories" data-i18n="footerLinkStories" class="hover:text-softGold transition">Những chuyến đi</a></li>
                 </ul>
             </div>
             <div>
-                <h4 id="footer-col-2-title" class="font-bold text-white text-sm mb-5 uppercase tracking-wider">Chính sách</h4>
+                <h4 data-i18n="footerCol2" class="font-bold text-white text-sm mb-5 uppercase tracking-wider">Chính sách</h4>
                 <ul class="space-y-3 text-xs md:text-sm">
-                    <li><a href="#" onclick="alert('Chính sách quyền riêng tư: Bảo mật tuyệt đối thông tin cá nhân khách hàng.')" id="footer-policy-1" class="hover:text-softGold transition">Chính sách bảo mật</a></li>
-                    <li><a href="#" onclick="alert('Điều khoản sử dụng áp dụng theo quy định pháp luật Việt Nam.')" id="footer-policy-2" class="hover:text-softGold transition">Điều khoản sử dụng</a></li>
-                    <li><a href="#" onclick="alert('Chính sách đổi/hủy tour linh hoạt trước 24h khởi hành.')" id="footer-policy-3" class="hover:text-softGold transition">Chính sách hoàn hủy</a></li>
+                    <li><a href="#" onclick="alert('Chính sách quyền riêng tư: Bảo mật tuyệt đối thông tin cá nhân khách hàng.')" data-i18n="footerPolicy1" class="hover:text-softGold transition">Chính sách bảo mật</a></li>
+                    <li><a href="#" onclick="alert('Điều khoản sử dụng áp dụng theo quy định pháp luật Việt Nam.')" data-i18n="footerPolicy2" class="hover:text-softGold transition">Điều khoản sử dụng</a></li>
+                    <li><a href="#" onclick="alert('Chính sách đổi/hủy tour linh hoạt trước 24h khởi hành.')" data-i18n="footerPolicy3" class="hover:text-softGold transition">Chính sách hoàn hủy</a></li>
                 </ul>
             </div>
             <div>
-                <h4 id="footer-col-3-title" class="font-bold text-white text-sm mb-5 uppercase tracking-wider">Kết nối & Quản trị</h4>
+                <h4 data-i18n="footerCol3" class="font-bold text-white text-sm mb-5 uppercase tracking-wider">Kết nối & Quản trị</h4>
                 <div class="flex space-x-5 text-xl mb-8">
                     <a href="#" class="hover:text-softGold transition"><i class="fa-brands fa-facebook"></i></a>
                     <a href="#" class="hover:text-softGold transition"><i class="fa-brands fa-instagram"></i></a>
                     <a href="#" class="hover:text-softGold transition"><i class="fa-brands fa-whatsapp"></i></a>
                 </div>
                 <div class="pt-4 border-t border-white/10">
-                    <button onclick="App.openAdminLogin()" id="admin-portal-btn" class="text-xs text-cream hover:text-softGold underline font-bold inline-flex items-center gap-2"><i class="fa-solid fa-lock text-softGold"></i> Quản trị viên (CMS Portal)</button>
+                    <button onclick="App.openAdminLogin()" data-i18n="adminPortalBtn" class="text-xs text-cream hover:text-softGold underline font-bold inline-flex items-center gap-2"><i class="fa-solid fa-lock text-softGold"></i> Quản trị viên (CMS Portal)</button>
                 </div>
             </div>
         </div>
-        <div id="footer-copyright" class="container mx-auto max-w-7xl text-center text-xs text-cream/70 pt-8 border-t border-white/10">
+        <div data-i18n="footerCopyright" class="container mx-auto max-w-7xl text-center text-xs text-cream/70 pt-8 border-t border-white/10">
             &copy; 2026 HueLocal. All rights reserved. Discover Hue through local eyes.
         </div>
     </footer>
@@ -678,8 +678,8 @@
             <p id="placeAddress" class="text-xs text-deepGreen font-bold mb-5 flex items-center"><i class="fa-solid fa-location-dot mr-2"></i> <span></span></p>
             <p id="placeDesc" class="text-sm md:text-base text-charcoal/80 leading-relaxed mb-8 font-light"></p>
             <div class="bg-cream p-5 rounded-2xl flex items-center justify-between border border-deepGreen/10">
-                <span id="place-status" class="text-xs font-bold text-deepGreen"><i class="fa-solid fa-circle-check text-green-600 mr-1.5"></i> Trạng thái: Mở cửa đón khách</span>
-                <button onclick="App.closeModal('placeModal')" id="close-btn-1" class="bg-deepGreen text-cream px-6 py-2.5 rounded-xl text-xs font-bold shadow">Đóng</button>
+                <span class="text-xs font-bold text-deepGreen"><i class="fa-solid fa-circle-check text-green-600 mr-1.5"></i> Trạng thái: Mở cửa đón khách</span>
+                <button onclick="App.closeModal('placeModal')" class="bg-deepGreen text-cream px-6 py-2.5 rounded-xl text-xs font-bold shadow">Đóng</button>
             </div>
         </div>
     </div>
@@ -739,7 +739,7 @@
         </div>
     </div>
 
-    <!-- SCRIPT ARCHITECTURE -->
+    <!-- SCRIPT ARCHITECTURE & TRANSLATIONS -->
     <script>
         const App = {
             db: {
@@ -757,77 +757,205 @@
             translations: {
                 vi: {
                     topBanner: "Khám phá Huế qua lăng kính người bản địa | Discover Hue through local eyes",
-                    navAbout: "Về chúng tôi", navExplore: "Khám phá", navAi: "Góc nhìn AI",
-                    navStories: "Nhật ký", navPartners: "Đối tác", navMember: "Đội ngũ", navContact: "Đặt trải nghiệm",
+                    navAbout: "Về chúng tôi", 
+                    navExplore: "Khám phá", 
+                    navAi: "Góc nhìn AI",
+                    navStories: "Nhật ký", 
+                    navPartners: "Đối tác", 
+                    navMember: "Đội ngũ", 
+                    navContact: "Đặt trải nghiệm",
+                    
                     heroBadge: "“Chi mô răng rứa ơ tề, người mô xứ lạ mau về đây chơi”",
                     heroTitle: "Discover Hue through local eyes.",
                     heroDesc: "Cố đô Huế qua góc nhìn nguyên bản của người bản địa: những con đường rêu phong tĩnh lặng, bữa ăn đậm vị tình quê và câu chuyện cung đình còn vang vọng trong từng mái ngói.",
-                    heroBtn: "Khám phá ngay",
-                    aboutHueBadge: "Về Cố Đô Huế", aboutHueTitle: "Hồn thơ xứ Cố đô trầm mặc",
-                    aboutHueDesc: "Huế trầm mặc bên dòng Hương giang là trung tâm văn hóa, lịch sử đặc sắc với hệ thống cung điện, lăng tẩm triều Nguyễn uy nghi và tinh hoa ẩm thực phong phú.",
-                    aboutHueLocalBadge: "Về chúng tôi", aboutHueLocalTitle: "HueLocal là gì?",
+                    heroBtnText: "Khám phá ngay",
+                    heroConsultBtn: "Đặt lịch tư vấn tour",
+                    heroCinematicSub: "HueLocal Cinematic Experience",
+                    heroCinematicTitle: "Hành trình chạm đến trái tim Cố đô",
+                    heroScrollText: "Scroll to explore ↓",
+
+                    aboutHueBadge: "Về Cố Đô Huế", 
+                    aboutHueTitle: "Hồn thơ xứ Cố đô trầm mặc",
+                    aboutHueDesc: "Huế trầm mặc bên dòng Hương giang là trung tâm văn hóa, lịch sử đặc sắc với hệ thống cung điện, lăng tẩm triều Nguyễn uy nghi và tinh hoa ẩm thực phong phú. Sức hút của Huế còn đến từ nhịp sống chậm rãi và tình cảm chân thành của con người nơi đây.",
+                    aboutLocalBadge: "Về chúng tôi", 
+                    aboutLocalTitle: "HueLocal là gì?",
                     aboutSlogan: "“Come as a traveler. Leave as a friend.”",
                     missionTitle: "Mục đích thành lập",
                     missionDesc: "Được điều phối bởi <strong>Nguyễn Phan Hoài Bảo</strong>, HueLocal tạo ra cầu nối gần gũi giữa du khách và người bản địa.",
                     meaningTitle: "Ý nghĩa thương hiệu",
                     meaningDesc: "Sự kết hợp giữa <strong>“Hue”</strong> và <strong>“Local”</strong> thể hiện góc nhìn chân thực, sâu sắc nhất về văn hóa bản địa.",
-                    whyTitle: "Vì sao là Huế?", whySubtitle: "Ba yếu tố định hình trải nghiệm khác biệt tại vùng đất Cố đô.",
-                    why1Title: "Cố đô di sản", why1Desc: "Kinh thành, lăng tẩm và cung điện triều Nguyễn nằm ẩn hiện hòa quyện ngay giữa đời sống thường ngày.",
-                    why2Title: "Sông Hương chậm rãi", why2Desc: "Nhịp sống êm đềm, những chuyến thuyền trên sông và hoàng hôn buông lơi soi bóng xuống mái chùa cổ.",
-                    why3Title: "Ẩm thực cung đình", why3Desc: "Từ tô bún bò đậm vị đến những món bánh tinh tế gắn liền với văn hóa ẩm thực hoàng gia xưa.",
-                    exploreBadge: "Sitemap Khám Phá", exploreTitle: "Khám phá Huế", exploreSubtitle: "Tuyển tập di sản, làng nghề truyền thống và các điểm đến mang đậm dấu ấn hoài niệm.",
-                    filterAll: "Tất cả", filterHeritage: "Di tích", filterCraft: "Làng nghề", filterExperience: "Trải nghiệm", filterHidden: "Hidden Gems",
-                    aiBadge: "Góc nhìn công nghệ", aiTitle: "AI với du lịch",
-                    storiesBadge: "Nhật ký hành trình", storiesTitle: "Những chuyến đi qua lăng kính bản địa",
+
+                    whyTitle: "Vì sao là Huế?", 
+                    whySubtitle: "Ba yếu tố định hình trải nghiệm khác biệt tại vùng đất Cố đô.",
+                    why1Title: "Cố đô di sản", 
+                    why1Desc: "Kinh thành, lăng tẩm và cung điện triều Nguyễn nằm ẩn hiện hòa quyện ngay giữa đời sống thường ngày.",
+                    why2Title: "Sông Hương chậm rãi", 
+                    why2Desc: "Nhịp sống êm đềm, những chuyến thuyền trên sông và hoàng hôn buông lơi soi bóng xuống mái chùa cổ.",
+                    why3Title: "Ẩm thực cung đình", 
+                    why3Desc: "Từ tô bún bò đậm vị đến những món bánh tinh tế gắn liền với văn hóa ẩm thực hoàng gia xưa.",
+
+                    exploreBadge: "Sitemap Khám Phá", 
+                    exploreTitle: "Khám phá Huế", 
+                    exploreSubtitle: "Tuyển tập di sản, làng nghề truyền thống và các điểm đến mang đậm dấu ấn hoài niệm.",
+                    filterAll: "Tất cả", 
+                    filterHeritage: "Di tích", 
+                    filterCraft: "Làng nghề", 
+                    filterExperience: "Trải nghiệm", 
+                    filterHidden: "Hidden Gems",
+
+                    aiBadge: "Góc nhìn công nghệ", 
+                    aiTitle: "AI với du lịch",
+                    aiDesc1: "Chúng mình không phủ nhận sự tiện lợi và những giá trị mà AI mang lại. Nhưng chúng mình tin rằng, du lịch không chỉ là những dòng thông tin được cung cấp, mà còn là những câu chuyện được kể bằng cảm xúc, những nụ cười trong giao tiếp và sự kết nối giữa người với người.",
+                    aiDesc2: "AI có thể giúp du khách biết thêm về Huế, nhưng tình yêu của một người con xứ Huế dành cho quê hương mình lại là một câu chuyện khác.",
+                    aiDesc3: "Chúng mình không muốn đứng ngoài sự phát triển của công nghệ, nhưng cũng không muốn một ngày nào đó, những người trẻ yêu du lịch, yêu văn hóa và muốn kể câu chuyện quê hương lại trở nên không còn cần thiết.",
+                    aiDesc4: "HueLocal chọn đồng hành cùng công nghệ, chứ không chọn để công nghệ thay thế con người. Bởi chúng mình tin rằng, công nghệ có thể kể một câu chuyện, nhưng chính con người mới thổi hồn vào câu chuyện ấy. 💜",
+
+                    storiesBadge: "Nhật ký hành trình", 
+                    storiesTitle: "Những chuyến đi qua lăng kính bản địa",
                     storiesSubtitle: "Mỗi bước chân qua những con ngõ nhỏ, mỗi sớm mai bên dòng Hương là một câu chuyện tình yêu viết riêng cho Huế.",
-                    partnersBadge: "Hệ sinh thái liên kết", partnersTitle: "Đối tác địa phương",
+                    storyTag1: "Phượt xứ Huế", storyH1: "Vi vu trên yên xe máy", storyP1: "“Lên xe và đi thôi! Cùng du khách nước ngoài vi vu khám phá những cung đường tuyệt đẹp quanh Cố đô. Come as a traveler, leave as a friend.”",
+                    storyTag2: "Giao lưu văn hóa", storyH2: "Khoảnh khắc kết nối", storyP2: "“Nụ cười rạng rỡ và những khoảnh khắc kết nối không khoảng cách giữa những người bạn phương xa và Local Guide nhà HueLocal.”",
+                    storyTag3: "Tình bạn phương xa", storyH3: "Những người bạn mới", storyP3: "“Đúng với tinh thần HueLocal: Từ những vị khách du lịch xa lạ, chúng ta gặp nhau và trở thành những người bạn thân thiết.”",
+                    storyTag4: "Cố đô hoài niệm", storyH4: "Dáng vẻ truyền thống", storyP4: "“Khoác lên mình tà áo dài truyền thống, bước qua khung cổng đậm chất Cố đô để cảm nhận trọn vẹn hồn thơ xứ Huế.”",
+
+                    partnersBadge: "Hệ sinh thái liên kết", 
+                    partnersTitle: "Đối tác địa phương",
                     partnersSubtitle: "Đồng hành cùng các thương hiệu lưu trú, ẩm thực và dịch vụ hàng đầu tại Huế.",
-                    partnerBtn: "Trở thành đối tác", partnerSubTag: "Đồng hành cùng HueLocal",
-                    teamBadge: "Đội ngũ sáng lập", teamTitle: "Thành viên HueLocal", teamSubtitle: "Những bạn trẻ đam mê công nghệ và khát vọng quảng bá văn hóa Cố đô.",
-                    contactBadge: "Hỗ trợ 24/7", contactTitle: "Liên hệ & Đặt trải nghiệm",
+                    partnerBtn: "Trở thành đối tác", 
+                    partnerSubTag: "Đồng hành cùng HueLocal",
+
+                    teamBadge: "Đội ngũ sáng lập", 
+                    teamTitle: "Thành viên HueLocal", 
+                    teamSubtitle: "Những bạn trẻ đam mê công nghệ và khát vọng quảng bá văn hóa Cố đô.",
+                    roleLeader: "Leader", memberDesc1: "Định hướng chiến lược, điều phối hoạt động chung và dẫn dắt đội ngũ phát triển dự án HueLocal.",
+                    roleProfile: "Profile picture", memberDesc2: "Thiết kế giao diện, hình ảnh thương hiệu và định hình phong cách thẩm mỹ mang đậm dấu ấn Cố đô.",
+                    roleManager: "Manager", memberDesc3: "Quản lý vận hành, kế hoạch triển khai và kết nối các đối tác dịch vụ trong hệ sinh thái.",
+                    roleMedia: "Media leader", memberDesc4: "Dẫn dắt chiến lược truyền thông, kỹ thuật hệ thống web, lập trình CMS và tích hợp dữ liệu.",
+
+                    contactBadge: "Hỗ trợ 24/7", 
+                    contactTitle: "Liên hệ & Đặt trải nghiệm",
                     contactSubtitle: "Điền thông tin chi tiết để đội ngũ HueLocal sắp xếp lịch trình tốt nhất cho bạn.",
-                    labelName: "Họ và tên", labelContact: "Email / WhatsApp / Số điện thoại", labelDate: "Ngày mong muốn đi",
-                    labelGuests: "Số lượng khách", labelMsg: "Yêu cầu đặc biệt / Lời nhắn", submitContactBtn: "Gửi yêu cầu đặt chỗ",
+                    labelName: "Họ và tên", 
+                    labelContact: "Email / WhatsApp / Số điện thoại", 
+                    labelDate: "Ngày mong muốn đi",
+                    labelGuests: "Số lượng khách", 
+                    labelMsg: "Yêu cầu đặc biệt / Lời nhắn", 
+                    submitContactBtn: "Gửi yêu cầu đặt chỗ",
+
                     footerDesc: "Discover Hue through local eyes. Nền tảng du lịch bản địa hàng đầu tại Cố đô Huế.",
-                    footerCol1: "Khám phá", footerCol2: "Chính sách", footerCol3: "Kết nối & Quản trị",
-                    adminPortalBtn: "Quản trị viên (CMS Portal)", placeStatus: "Trạng thái: Mở cửa đón khách", closeBtn: "Đóng"
+                    footerCol1: "Khám phá", 
+                    footerCol2: "Chính sách", 
+                    footerCol3: "Kết nối & Quản trị",
+                    footerLink1: "Di tích lịch sử", 
+                    footerLink2: "Ẩm thực cố đô", 
+                    footerLinkAi: "AI với du lịch", 
+                    footerLinkStories: "Những chuyến đi",
+                    footerPolicy1: "Chính sách bảo mật", 
+                    footerPolicy2: "Điều khoản sử dụng", 
+                    footerPolicy3: "Chính sách hoàn hủy",
+                    adminPortalBtn: "Quản trị viên (CMS Portal)",
+                    footerCopyright: "&copy; 2026 HueLocal. All rights reserved. Discover Hue through local eyes."
                 },
                 en: {
                     topBanner: "Discover Hue through local eyes | Khám phá Huế qua lăng kính người bản địa",
-                    navAbout: "About Us", navExplore: "Explore", navAi: "AI & Tourism",
-                    navStories: "Stories", navPartners: "Partners", navMember: "Team", navContact: "Book Tour",
+                    navAbout: "About Us", 
+                    navExplore: "Explore", 
+                    navAi: "AI & Tourism",
+                    navStories: "Stories", 
+                    navPartners: "Partners", 
+                    navMember: "Team", 
+                    navContact: "Book Tour",
+                    
                     heroBadge: "“Come as a traveler. Leave as a friend.”",
                     heroTitle: "Discover Hue through local eyes.",
                     heroDesc: "The ancient capital of Hue through local eyes: mossy paths, flavorful meals, and royal stories echoing in every tiled roof.",
-                    heroBtn: "Explore Now",
-                    aboutHueBadge: "About Hue Ancient Capital", aboutHueTitle: "The Poetic Soul of Ancient Hue",
-                    aboutHueDesc: "Hue, nestled peacefully by the Perfume River, is a distinguished cultural and historical center featuring majestic Nguyen dynasty palaces and royal tombs.",
-                    aboutHueLocalBadge: "About Us", aboutHueLocalTitle: "What is HueLocal?",
+                    heroBtnText: "Explore Now",
+                    heroConsultBtn: "Book Consultation",
+                    heroCinematicSub: "HueLocal Cinematic Experience",
+                    heroCinematicTitle: "A journey to touch the heart of the Ancient Capital",
+                    heroScrollText: "Scroll to explore ↓",
+
+                    aboutHueBadge: "About Hue Ancient Capital", 
+                    aboutHueTitle: "The Poetic Soul of Ancient Hue",
+                    aboutHueDesc: "Hue, nestled peacefully by the Perfume River, is a distinguished cultural and historical center featuring majestic Nguyen dynasty palaces, royal tombs, and rich culinary arts. Its allure also stems from a slow-paced lifestyle and heartfelt local hospitality.",
+                    aboutLocalBadge: "About Us", 
+                    aboutLocalTitle: "What is HueLocal?",
                     aboutSlogan: "“Come as a traveler. Leave as a friend.”",
                     missionTitle: "Purpose & Mission",
                     missionDesc: "Coordinated by <strong>Nguyen Phan Hoai Bao</strong>, HueLocal builds a close bridge between travelers and locals.",
                     meaningTitle: "Brand Meaning",
-                    meaningDesc: "Combining <strong>“Hue”</strong> and <strong>“Local”</strong> reflects native insights and authenticity.",
-                    whyTitle: "Why Hue?", whySubtitle: "Three elements defining a unique experience in the ancient capital.",
-                    why1Title: "Heritage Capital", why1Desc: "The Imperial Citadel, royal tombs, and Nguyen dynasty palaces embedded right in daily life.",
-                    why2Title: "Slow Perfume River", why2Desc: "Gentle rhythm of life, boats on the river, and sunset reflecting on temple roofs.",
-                    why3Title: "Royal Cuisine", why3Desc: "From beef noodle soup to delicate dishes associated with royal culinary arts.",
-                    exploreBadge: "Discovery Sitemap", exploreTitle: "Explore Hue", exploreSubtitle: "Heritage sites, traditional craft villages, and nostalgic hidden corners.",
-                    filterAll: "All", filterHeritage: "Heritage", filterCraft: "Craft", filterExperience: "Experience", filterHidden: "Hidden Gems",
-                    aiBadge: "Technology Perspective", aiTitle: "AI & Tourism",
-                    storiesBadge: "Journey Diary", storiesTitle: "Journey Stories Through Local Eyes",
+                    meaningDesc: "Combining <strong>“Hue”</strong> and <strong>“Local”</strong> reflects native insights and cultural authenticity.",
+
+                    whyTitle: "Why Hue?", 
+                    whySubtitle: "Three elements defining a unique experience in the ancient capital.",
+                    why1Title: "Heritage Capital", 
+                    why1Desc: "The Imperial Citadel, royal tombs, and Nguyen dynasty palaces embedded right in daily life.",
+                    why2Title: "Slow Perfume River", 
+                    why2Desc: "Gentle rhythm of life, boats on the river, and sunset reflecting on temple roofs.",
+                    why3Title: "Royal Cuisine", 
+                    why3Desc: "From flavorful beef noodle soup to delicate dishes associated with ancient royal culinary arts.",
+
+                    exploreBadge: "Discovery Sitemap", 
+                    exploreTitle: "Explore Hue", 
+                    exploreSubtitle: "Heritage sites, traditional craft villages, and nostalgic hidden corners.",
+                    filterAll: "All", 
+                    filterHeritage: "Heritage", 
+                    filterCraft: "Craft", 
+                    filterExperience: "Experience", 
+                    filterHidden: "Hidden Gems",
+
+                    aiBadge: "Technology Perspective", 
+                    aiTitle: "AI & Tourism",
+                    aiDesc1: "We do not deny the convenience and value that AI brings. However, we believe travel is not merely about receiving information, but about stories told with emotion, smiles in communication, and human-to-human connection.",
+                    aiDesc2: "AI can help travelers learn about Hue, but a local's love for their hometown is an entirely different story.",
+                    aiDesc3: "We do not want to stand aside from technological progress, but nor do we want a future where young people passionate about travel, culture, and storytelling become obsolete.",
+                    aiDesc4: "HueLocal chooses to accompany technology rather than let technology replace humans. Because technology can tell a story, but humans bring that story to life. 💜",
+
+                    storiesBadge: "Journey Diary", 
+                    storiesTitle: "Journey Stories Through Local Eyes",
                     storiesSubtitle: "Every step through small alleys, every early morning by the Perfume River is a love story written exclusively for Hue.",
-                    partnersBadge: "Partner Ecosystem", partnersTitle: "Local Partners",
+                    storyTag1: "Hue Road Trip", storyH1: "Riding on two wheels", storyP1: "“Hop on and let's go! Cruising with international travelers through breathtaking scenic routes around the ancient capital. Come as a traveler, leave as a friend.”",
+                    storyTag2: "Cultural Exchange", storyH2: "Connection Moments", storyP2: "“Radiant smiles and seamless connections between distant friends and local guides at HueLocal.”",
+                    storyTag3: "Distant Friendships", storyH3: "New Friends", storyP3: "“True to HueLocal's spirit: From unfamiliar travelers, we meet and become close friends.”",
+                    storyTag4: "Nostalgic Capital", storyH4: "Traditional Attire", storyP4: "“Draped in traditional Ao Dai, stepping through ancient gates to fully feel the poetic soul of Hue.”",
+
+                    partnersBadge: "Partner Ecosystem", 
+                    partnersTitle: "Local Partners",
                     partnersSubtitle: "Collaborating with top accommodation, dining, and service brands in Hue.",
-                    partnerBtn: "Become a Partner", partnerSubTag: "Partnering with HueLocal",
-                    teamBadge: "Founding Team", teamTitle: "HueLocal Members", teamSubtitle: "Young individuals passionate about technology and dedicated to promoting ancient capital culture.",
-                    contactBadge: "24/7 Support", contactTitle: "Contact & Booking",
+                    partnerBtn: "Become a Partner", 
+                    partnerSubTag: "Partnering with HueLocal",
+
+                    teamBadge: "Founding Team", 
+                    teamTitle: "HueLocal Members", 
+                    teamSubtitle: "Young individuals passionate about technology and dedicated to promoting ancient capital culture.",
+                    roleLeader: "Leader", memberDesc1: "Directing strategy, coordinating general operations, and leading the team to develop the HueLocal project.",
+                    roleProfile: "Profile picture", memberDesc2: "UI/UX design, brand visuals, and shaping an aesthetic style imbued with ancient capital heritage.",
+                    roleManager: "Manager", memberDesc3: "Managing operations, implementation plans, and connecting service partners within the ecosystem.",
+                    roleMedia: "Media leader", memberDesc4: "Leading media strategy, web system engineering, CMS programming, and data integration.",
+
+                    contactBadge: "24/7 Support", 
+                    contactTitle: "Contact & Booking",
                     contactSubtitle: "Fill in the details so the HueLocal team can arrange the best itinerary for you.",
-                    labelName: "Full Name", labelContact: "Email / WhatsApp / Phone", labelDate: "Preferred Date",
-                    labelGuests: "Number of Guests", labelMsg: "Special Request / Message", submitContactBtn: "Send Booking Request",
+                    labelName: "Full Name", 
+                    labelContact: "Email / WhatsApp / Phone", 
+                    labelDate: "Preferred Date",
+                    labelGuests: "Number of Guests", 
+                    labelMsg: "Special Request / Message", 
+                    submitContactBtn: "Send Booking Request",
+
                     footerDesc: "Discover Hue through local eyes. The leading local travel platform in ancient capital Hue.",
-                    footerCol1: "Explore", footerCol2: "Policies", footerCol3: "Connect & Admin",
-                    adminPortalBtn: "Administrator (CMS Portal)", placeStatus: "Status: Open to visitors", closeBtn: "Close"
+                    footerCol1: "Explore", 
+                    footerCol2: "Policies", 
+                    footerCol3: "Connect & Admin",
+                    footerLink1: "Historical Heritage", 
+                    footerLink2: "Royal Cuisine", 
+                    footerLinkAi: "AI & Tourism", 
+                    footerLinkStories: "Journeys",
+                    footerPolicy1: "Privacy Policy", 
+                    footerPolicy2: "Terms of Use", 
+                    footerPolicy3: "Cancellation Policy",
+                    adminPortalBtn: "Administrator (CMS Portal)",
+                    footerCopyright: "&copy; 2026 HueLocal. All rights reserved. Discover Hue through local eyes."
                 }
             },
 
@@ -841,9 +969,11 @@
                     lang = 'vi';
                 }
                 const t = this.translations[lang];
-                Object.keys(t).forEach(key => {
-                    const el = document.getElementById(key);
-                    if(el) el.innerText = t[key];
+                document.querySelectorAll('[data-i18n]').forEach(el => {
+                    const key = el.getAttribute('data-i18n');
+                    if(t[key]) {
+                        el.innerHTML = t[key];
+                    }
                 });
             },
 
